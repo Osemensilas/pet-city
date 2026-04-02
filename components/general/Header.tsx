@@ -13,7 +13,11 @@ const Header = () => {
     const [showNav, setShowNav] = useState(false);
     
     const hamClicked = () => {
-        
+        if (showNav){
+            setShowNav(false);
+        }else{
+            setShowNav(true);
+        }
     }
 
     return ( 
