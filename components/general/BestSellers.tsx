@@ -108,7 +108,7 @@ const BestSeller = () => {
                 <Link href="/all-best-sellers" className="text-primary text-base font-medium hover:underline">View All</Link>
             </div>
             <div className="h-max w-full relative">
-                <div className="h-[1px] w-full flex items-center justify-between absolute top-1/2 left-0">
+                <div className="h-[1px] w-full flex items-center justify-between absolute top-1/2 left-0 sm:block hidden">
                     <button title="next" onClick={leftBtn} type="button" className="">
                         <i className="fa-solid fa-chevron-left text-2xl"></i>
                     </button>
