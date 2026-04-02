@@ -6,6 +6,8 @@ const FAQs = () => {
         let dropDown = e.currentTarget;
         let dropDownAnswer = dropDown.parentElement?.parentElement?.children[0].children[1];
         
+        if (!dropDownAnswer) return;
+        
         if (dropDown.classList.contains('active')){
             dropDown.classList.remove('active');
             dropDownAnswer.classList.remove('active');
