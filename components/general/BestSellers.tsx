@@ -1,3 +1,5 @@
+'use client';
+
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -82,6 +84,22 @@ const BestSeller = () => {
         fetchProducts();
     },[]);
 
+    const cardRef = useRef(null);
+
+    const rightBtn = (e) => {
+
+        if (cardRef.current){
+            cardRef.current.scrollLeft += 250;
+        }
+    }
+
+    const leftBtn = () => {
+
+        if (cardRef.current){
+            cardRef.current.scrollLeft -= 250;
+        }
+    }
+
     return ( 
         <>
         <section className="h-max w-screen px-10 py-10">
@@ -91,15 +109,15 @@ const BestSeller = () => {
             </div>
             <div className="h-max w-full relative">
                 <div className="h-[1px] w-full flex items-center justify-between absolute top-1/2 left-0">
-                    <button title="next" type="button" className="">
+                    <button title="next" onClick={leftBtn} type="button" className="">
                         <i className="fa-solid fa-chevron-left text-2xl"></i>
                     </button>
-                    <button title="next" type="button" className="">
+                    <button title="next" onClick={rightBtn} type="button" className="">
                         <i className="fa-solid fa-chevron-right text-2xl"></i>
                     </button>
                 </div>
                 <div className="h-max w-full overflow-x-scroll">
-                    <div className="w-max h-max flex items-center gap-5">
+                    <div ref={cardRef} className="w-max h-max flex items-center gap-5">
                         {
                             products.map((product, index) => (
                                 <div className="h-max w-max bg-accent rounded p-3">
