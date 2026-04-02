@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const Brands = () => {
     
     type brand = {
-        id: int,
+        id: number,
         name: string,
         image: string 
     }
