@@ -64,7 +64,7 @@ const Brands = () => {
                 {
                     ourBrands.map((brand, index) => (
                 <Link href="/shop-by-brand?brand=brand1" key={index} className="h-max w-max flex">
-                    <div className="relative h-[150px] w-[180px]">
+                    <div className="relative h-[100px] w-[120px]">
                         <Image src={"/pl1.jpg"} alt="best seller 1" fill />
                     </div>
                 </Link>
