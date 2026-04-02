@@ -6,7 +6,7 @@ import BestSeller from "@/components/general/BestSellers";
 import Link from "next/link";
 import Brands from "@/components/general/Brands";
 import Faqs from '@/components/general/Faqs';
-import useRouter from 'next/navigation';
+import { useRouter } from "next/navigation";
 
 const HomePage = () => {
   
