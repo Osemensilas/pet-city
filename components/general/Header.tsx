@@ -18,7 +18,7 @@ const Header = () => {
 
     return ( 
         <>
-        <header className="h-[100px] w-screen px-10">
+        <header className="h-[100px] w-screen px-4 sm:px-10">
             <div className="h-full sm:h-[50%] w-full flex items-center justify-between">
                 <div className="h-max w-max">
                     <h2 className="text-3xl font-bold text-header">Pet<span className="text-primary">City</span></h2>
