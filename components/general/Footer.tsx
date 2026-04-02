@@ -32,7 +32,7 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="h-max w-max flex sm:flex-row flex-col gap-20">
+                <div className="h-max w-full sm:w-max flex sm:flex-row flex-col gap-20">
                     <div className="h-max w-max">
                         <h3 className="text-xl font-bold text-header mb-3">Main Links</h3>
                         <ul className="h-max w-max flex flex-col items-start gap-2">
