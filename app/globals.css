@@ -63,6 +63,8 @@ body {
 .ham-icon::after{
   content: '';
   position: absolute;
+  height: 2px;
+  width: 100%;
   top: 5px;
   left: 0;
   background: var(--header);
@@ -71,6 +73,8 @@ body {
 .ham-icon::before {
   content: '';
   position: absolute;
+  height: 2px;
+  width: 100%;
   top: -5px;
   left: 0;
   background: var(--header);
