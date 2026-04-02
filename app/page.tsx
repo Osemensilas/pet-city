@@ -70,7 +70,7 @@ const HomePage = () => {
   }
   return ( 
     <>
-    <section className="h-screen w-screen sm:px-20 px-4 relative flex items-center justify-start pl-20">
+    <section className="h-screen w-screen sm:px-20 px-4 relative flex items-center justify-start pl-0 sm:pl-20">
       <div className="w-full sm:w-[60%] h-max relative z-10">
         <h1 className="text-4xl font-bold text-accent mb-5">Satisfy Your Pets' Need</h1>
         <p className="text-accent text-lg mb-5">Your one-stop shop for all your pet needs. From food to toys, we have everything to keep your furry friend happy and healthy.</p>
@@ -100,7 +100,7 @@ const HomePage = () => {
       </div>
     </section>
     <BestSeller />
-    <section className="w-full h-max px-10 py-10">
+    <section className="w-full h-max px-4 sm:px-10 py-10">
       <h2 className="text-2xl font-bold text-header mb-5">Shop by Pet</h2>
       <div className="h-[70vh] w-full flex items-center justify-evenly mt-10">
           <Link href="/shop-by-pet?pet=dogs" className="h-max w-max flex">
@@ -115,7 +115,7 @@ const HomePage = () => {
           </Link>
       </div>
     </section>
-    <section className="h-[70vh] w-full px-10 py-10">
+    <section className="h-[70vh] w-full px-4 sm:px-10 py-10">
       <div className="h-full w-full flex rounded bg-accent">
         <div className="relative w-1/2 h-full">
           <Image src={"/pet-doc.jpg"} fill alt="pharmacy image" className="rounded-tl rounded-bl" />
@@ -130,7 +130,7 @@ const HomePage = () => {
       </div>
     </section>
     <Brands />
-    <section className="h-[70vh] w-full px-10 py-10">
+    <section className="h-[70vh] w-full px-4 sm:px-10 py-10">
       <div className="h-full w-full flex rounded bg-accent">
         <div className="w-1/2 h-full flex justify-center flex-col gap-10 px-10">
           <h2 className="text-3xl font-semibold">Newsletter</h2>

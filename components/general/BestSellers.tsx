@@ -102,7 +102,7 @@ const BestSeller = () => {
 
     return ( 
         <>
-        <section className="h-max w-screen px-10 py-10">
+        <section className="h-max w-screen px-4 sm:px-10 py-10">
             <div className="h-max w-full flex items-center justify-between mb-5">
                 <h2 className="text-2xl font-bold text-header mb-5">Best Sellers</h2>
                 <Link href="/all-best-sellers" className="text-primary text-base font-medium hover:underline">View All</Link>

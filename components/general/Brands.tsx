@@ -56,7 +56,7 @@ const Brands = () => {
     ];
     return ( 
         <>
-        <section className="h-max w-screen px-10 py-10">
+        <section className="h-max w-screen px-4 sm:px-10 py-10">
             <div className="h-max w-full flex items-center justify-between mb-5">
                 <h2 className="text-2xl font-bold text-header mb-5">Shop by Brand</h2>
             </div>
