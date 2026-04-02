@@ -50,7 +50,7 @@ const Header = () => {
                 </div>
             </div>
             <div className={`h-[50%] w-full flex items-center justify-between
-            ${showNav ? "absolute top-0 left-0 h-[100vh] w-[100vw]  px-4 py-10 z-5" : "hidden"}
+            ${showNav ? "absolute z-5" : "hidden"}
             `}>
                 <ul className="h-max w-max flex items-center gap-4">
                     <li className={`text-header text-base font-medium hover:text-primary transition-colors duration-300 group
