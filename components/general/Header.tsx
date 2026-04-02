@@ -10,6 +10,11 @@ const Header = () => {
     const currentPath = usePathname();
 
     const [activeUser, setActiveUser] = useState(true);
+    const [showNav, setShowNav] = useState(false);
+    
+    const hamClicked = () => {
+        
+    }
 
     return ( 
         <>
@@ -33,8 +38,12 @@ const Header = () => {
                         <span className="ml-2 text-header">Welcome</span>
                     </Link>
                 </div>
+                <div onClick={hamClicked} className="hamburger">
+                </div>
             </div>
-            <div className="h-[50%] w-full flex items-center justify-between">
+            <div className={`h-[50%] w-full flex items-center justify-between
+            ${showNav ? "" : "hidden"}
+            `}>
                 <ul className="h-max w-max flex items-center gap-4">
                     <li className={`text-header text-base font-medium hover:text-primary transition-colors duration-300 group
                         ${currentPath === "/" ? "text-primary" : ""}
