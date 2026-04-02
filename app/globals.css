@@ -60,6 +60,10 @@ body {
   transform: translate(-50%, 0);
 }
 
+.ham-icon.active{
+  background: transparent;
+}
+
 .ham-icon::after{
   content: '';
   position: absolute;
@@ -70,6 +74,11 @@ body {
   background: var(--header);
 }
 
+.ham-icon.active::after{
+  transform: rotate(45deg);
+  transition: 0.3s ease-in-out;
+}
+
 .ham-icon::before {
   content: '';
   position: absolute;
@@ -78,6 +87,11 @@ body {
   top: -5px;
   left: 0;
   background: var(--header);
+}
+
+.ham-icon.active::before {
+  transform: rotate(-45deg);
+  transition: 0.3s ease-in-out;
 }
 
 /*Frequently begins*/

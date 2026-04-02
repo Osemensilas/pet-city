@@ -43,7 +43,8 @@ const Header = () => {
                     </Link>
                 </div>
                 <div onClick={hamClicked} className="hamburger">
-                    <div className="ham-icon"></div>
+                    <div className={`ham-icon ${showNav ? "active" : ""}
+                    `}></div>
                 </div>
             </div>
             <div className={`h-[50%] w-full flex items-center justify-between
