@@ -28,6 +28,48 @@ const BestSeller = () => {
             price: 7500,
             stock: "In stock",
             image: "/best2.jpg"
+        },
+        {
+            id: 3,
+            name: "Hills Science Diet",
+            price: 5000,
+            stock: "In stock",
+            image: "/best1.jpg"
+        },
+        {
+            id: 4,
+            name: "Hills Science Diet",
+            price: 7500,
+            stock: "In stock",
+            image: "/best2.jpg"
+        },
+        {
+            id: 5,
+            name: "Hills Science Diet",
+            price: 5000,
+            stock: "In stock",
+            image: "/best1.jpg"
+        },
+        {
+            id: 6,
+            name: "Hills Science Diet",
+            price: 7500,
+            stock: "In stock",
+            image: "/best2.jpg"
+        },
+        {
+            id: 7,
+            name: "Hills Science Diet",
+            price: 5000,
+            stock: "In stock",
+            image: "/best1.jpg"
+        },
+        {
+            id: 8,
+            name: "Hills Science Diet",
+            price: 7500,
+            stock: "In stock",
+            image: "/best2.jpg"
         }
     ];
 
@@ -56,7 +98,7 @@ const BestSeller = () => {
                         <i className="fa-solid fa-chevron-right text-2xl"></i>
                     </button>
                 </div>
-                <div className="h-max w-full overflow-hidden">
+                <div className="h-max w-full overflow-x-scroll">
                     <div className="w-max h-max flex items-center gap-5">
                         {
                             products.map((product, index) => (
