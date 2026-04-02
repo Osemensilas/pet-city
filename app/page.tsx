@@ -117,7 +117,7 @@ const HomePage = () => {
     </section>
     <section className="h-[70vh] w-full px-4 sm:px-10 py-10">
       <div className="h-full w-full flex rounded bg-accent">
-        <div className="relative w-1/2 h-full">
+        <div className="relative w-1/2 h-full hidden sm:block">
           <Image src={"/pet-doc.jpg"} fill alt="pharmacy image" className="rounded-tl rounded-bl" />
         </div>
         <div className="w-1/2 h-full flex justify-center flex-col gap-10 px-10">
@@ -142,7 +142,7 @@ const HomePage = () => {
             </div>
           </form>
         </div>
-        <div className="relative w-1/2 h-full">
+        <div className="relative w-1/2 h-full hidden sm:block">
           <Image src={"/newsletter.jpg"} fill alt="newsletter image" className="rounded-tr rounded-br" />
         </div>
       </div>
