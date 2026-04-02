@@ -70,8 +70,8 @@ const HomePage = () => {
   }
   return ( 
     <>
-    <section className="h-screen w-screen px-20 relative flex items-center justify-start pl-20">
-      <div className="w-[60%] h-max relative z-10">
+    <section className="h-screen w-screen sm:px-20 px-4 relative flex items-center justify-start pl-20">
+      <div className="w-full sm:w-[60%] h-max relative z-10">
         <h1 className="text-4xl font-bold text-accent mb-5">Satisfy Your Pets' Need</h1>
         <p className="text-accent text-lg mb-5">Your one-stop shop for all your pet needs. From food to toys, we have everything to keep your furry friend happy and healthy.</p>
         <button type="button" className="bg-primary text-background px-5 py-2 rounded hover:bg-primary-dark transition-colors duration-300">Shop Now</button>
