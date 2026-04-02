@@ -1,6 +1,8 @@
+import React from 'react';
+
 const FAQs = () => {
 
-    const frequentClicked = (e) => {
+    const frequentClicked = (e: React.MouseEvent<HTMLDivElement>) => {
         let dropDown = e.currentTarget;
         let dropDownAnswer = dropDown.parentElement.parentElement.children[0].children[1];
         
