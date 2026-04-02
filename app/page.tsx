@@ -6,8 +6,11 @@ import BestSeller from "@/components/general/BestSellers";
 import Link from "next/link";
 import Brands from "@/components/general/Brands";
 import Faqs from '@/components/general/Faqs';
+import useRouter from 'next/navigation';
 
 const HomePage = () => {
+  
+  const router = useRouter();
 
   const [activeImg, setActiveImg] = useState("/heroc1.jpg");
   const [activeIndex, setActiveIndex] = useState(1);
@@ -68,13 +71,18 @@ const HomePage = () => {
       setActiveIndex(5); 
     }
   }
+  
+  const gotoStore = () => {
+    router.push("/store");
+  }
+  
   return ( 
     <>
     <section className="h-screen w-screen sm:px-20 px-4 relative flex items-center justify-start pl-4 sm:pl-20">
       <div className="w-full sm:w-[60%] h-max relative z-10">
         <h1 className="text-4xl font-bold text-accent mb-5">Satisfy Your Pets' Need</h1>
         <p className="text-accent text-lg mb-5">Your one-stop shop for all your pet needs. From food to toys, we have everything to keep your furry friend happy and healthy.</p>
-        <button type="button" className="bg-primary text-background px-5 py-2 rounded hover:bg-primary-dark transition-colors duration-300">Shop Now</button>
+        <button onClick={gotoStore} type="button" className="bg-primary text-background px-5 py-2 rounded hover:bg-primary-dark transition-colors duration-300">Shop Now</button>
       </div>
       <div className="w-full h-full absolute top-0 left-0 custom-dark">
         <div className="relative h-full w-full">
