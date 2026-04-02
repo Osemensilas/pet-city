@@ -143,7 +143,7 @@ const HomePage = () => {
           </form>
         </div>
         <div className="relative w-1/2 h-full">
-          <Image src={"/newsletter.jpg"} fill alt="pharmacy image" className="rounded-tr rounded-br" />
+          <Image src={"/newsletter.jpg"} fill alt="newsletter image" className="rounded-tr rounded-br" />
         </div>
       </div>
     </section>
