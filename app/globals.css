@@ -50,6 +50,16 @@ body {
   width: 40px;
 }
 
+.ham-icon{
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: var(--header);
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, 0);
+}
+
 /*Frequently begins*/
 
 #frequently{

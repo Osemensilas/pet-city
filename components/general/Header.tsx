@@ -29,7 +29,7 @@ const Header = () => {
                         <i className="fa fa-search text-grey"></i>
                     </button>
                 </form>
-                <div className="h-max w-max">
+                <div className="h-max w-max hidden sm:block">
                     <div className={`${activeUser ? "hidden" : "text-base text-primary py-1 px-4 border border-primary rounded cursor-pointer"}`}>
                         <Link href="/login">Login</Link>
                     </div>
@@ -39,6 +39,7 @@ const Header = () => {
                     </Link>
                 </div>
                 <div onClick={hamClicked} className="hamburger">
+                    <div className="ham-icon"></div>
                 </div>
             </div>
             <div className={`h-[50%] w-full flex items-center justify-between
