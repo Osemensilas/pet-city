@@ -4,7 +4,7 @@ const FAQs = () => {
 
     const frequentClicked = (e: React.MouseEvent<HTMLDivElement>) => {
         let dropDown = e.currentTarget;
-        let dropDownAnswer = dropDown.parentElement.parentElement.children[0].children[1];
+        let dropDownAnswer = dropDown.parentElement?.parentElement?.children[0].children[1];
         
         if (dropDown.classList.contains('active')){
             dropDown.classList.remove('active');
