@@ -42,13 +42,15 @@ const Header = () => {
                         <span className="ml-2 text-header">Welcome</span>
                     </Link>
                 </div>
-                <div onClick={hamClicked} className="hamburger">
+                <div onClick={hamClicked} className={`hamburger
+                ${showNav ? "z-10" : ""}
+                `}>
                     <div className={`ham-icon ${showNav ? "active" : ""}
                     `}></div>
                 </div>
             </div>
             <div className={`h-[50%] w-full flex items-center justify-between
-            ${showNav ? "" : "hidden"}
+            ${showNav ? "absolute top-0 left-0 h-[100vh] w-[100vw]  px-4 py-10" : "hidden"}
             `}>
                 <ul className="h-max w-max flex items-center gap-4">
                     <li className={`text-header text-base font-medium hover:text-primary transition-colors duration-300 group
