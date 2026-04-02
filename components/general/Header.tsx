@@ -19,11 +19,11 @@ const Header = () => {
     return ( 
         <>
         <header className="h-[100px] w-screen px-10">
-            <div className="h-[50%] w-full flex items-center justify-between">
+            <div className="h-full sm:h-[50%] w-full flex items-center justify-between">
                 <div className="h-max w-max">
                     <h2 className="text-3xl font-bold text-header">Pet<span className="text-primary">City</span></h2>
                 </div>
-                <form onSubmit={(e) => e.preventDefault()} className="h-max w-max relative">
+                <form onSubmit={(e) => e.preventDefault()} className="h-max w-max relative hidden sm:block">
                     <input type="text" placeholder="Search for products, brands and more" className="h-10 w-[350px] border border-grey rounded outline-none px-10 text-sm bg-transparent" />
                     <button type="submit" className="h-max w-max absolute top-[10px] left-[15px]" title="search button">
                         <i className="fa fa-search text-grey"></i>
