@@ -49,7 +49,7 @@ const Header = () => {
                     `}></div>
                 </div>
             </div>
-            <div className={`h-[100vh] sm:h-[50%] w-full flex flex-col sm:flex-row items-center justify-between
+            <div className={`h-[100vh] sm:h-[50%] w-full flex flex-row sm:flex-col items-center justify-between
             ${showNav ? "absolute top-0 left-0 z-5" : "hidden"}
             `}>
                 <ul className="h-max w-max flex items-center gap-4">
