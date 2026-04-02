@@ -4,7 +4,15 @@ import { useEffect, useState } from "react";
 
 const BestSeller = () => {
 
-    const [products, setProducts] = useState([]);
+    type Product = {
+        id: number;
+        name: string;
+        price: number;
+        stock: string;
+        image: string;
+    };
+
+    const [products, setProducts] = useState<Product[]>([]);
 
     const bestSellers = [
         {
