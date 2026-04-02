@@ -117,7 +117,7 @@ const HomePage = () => {
     <section className="h-[70vh] w-full px-10 py-10">
       <div className="h-full w-full flex rounded bg-accent">
         <div className="relative w-1/2 h-full">
-          <Image src={"/"} fill alt="pharmacy image" />
+          <Image src={"/pet-dic.jpg"} fill alt="pharmacy image" />
         </div>
         <div className="w-1/2 h-full flex justify-center flex-col gap-10 px-10">
             <h2 className="text-3xl font-semibold">Health Matters</h2>
