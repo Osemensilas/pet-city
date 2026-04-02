@@ -78,7 +78,7 @@ const HomePage = () => {
   
   return ( 
     <>
-    <section className="h-screen w-[calc(100vh-100px)] sm:w-screen sm:px-20 px-4 relative flex items-center justify-start pl-4 sm:pl-20">
+    <section className="sm:h-screen h-[calc(100vh-100px)] w-screen sm:px-20 px-4 relative flex items-center justify-start pl-4 sm:pl-20">
       <div className="w-full sm:w-[60%] h-max relative z-10">
         <h1 className="text-4xl font-bold text-accent mb-5">Satisfy Your Pets' Need</h1>
         <p className="text-accent text-lg mb-5">Your one-stop shop for all your pet needs. From food to toys, we have everything to keep your furry friend happy and healthy.</p>
