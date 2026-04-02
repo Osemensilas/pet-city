@@ -84,7 +84,7 @@ const BestSeller = () => {
         fetchProducts();
     },[]);
 
-    const cardRef = useRef(null);
+    const cardRef = useRef<HTMLDivElement | null>(null);
 
     const rightBtn = () => {
         
