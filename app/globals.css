@@ -75,6 +75,7 @@ body {
 }
 
 .ham-icon.active::after{
+  top: 0;
   transform: rotate(45deg);
   transition: 0.3s ease-in-out;
 }
@@ -90,6 +91,7 @@ body {
 }
 
 .ham-icon.active::before {
+  top: 0;
   transform: rotate(-45deg);
   transition: 0.3s ease-in-out;
 }
