@@ -60,6 +60,22 @@ body {
   transform: translate(-50%, 0);
 }
 
+.ham-icon::after{
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  background: var(--header);
+}
+
+.ham-icon::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  background: var(--header);
+}
+
 /*Frequently begins*/
 
 #frequently{
