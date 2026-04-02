@@ -49,10 +49,10 @@ const Header = () => {
                     `}></div>
                 </div>
             </div>
-            <div className={`h-[100vh] sm:h-[50%] w-full flex flex-row sm:flex-col items-center justify-between
+            <div className={`h-[100vh] sm:h-[50%] w-full flex flex-row sm:flex-col items-start sm:items-center justify-between
             ${showNav ? "absolute top-0 left-0 z-5" : "hidden"}
             `}>
-                <ul className="h-max w-max flex items-center gap-4">
+                <ul className="h-full sm:h-max w-full sm:w-max flex flex-col sm:flex-row items-center gap-4">
                     <li className={`text-header text-base font-medium hover:text-primary transition-colors duration-300 group
                         ${currentPath === "/" ? "text-primary" : ""}
                         `}>
