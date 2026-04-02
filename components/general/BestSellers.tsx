@@ -88,18 +88,16 @@ const BestSeller = () => {
 
     const rightBtn = () => {
         
-        console.log("Hello World");
-
-       /* if (cardRef.current){
+       if (cardRef.current){
             cardRef.current.scrollLeft += 250;
-        }*/
+        }
     }
 
     const leftBtn = () => {
 
-        /*if (cardRef.current){
+        if (cardRef.current){
             cardRef.current.scrollLeft -= 250;
-        }*/
+        }
     }
 
     return ( 
