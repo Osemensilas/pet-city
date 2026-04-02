@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedan:ital@0;1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent: #ffffff;
+  --background: #f9f6f2;
+  --backgroundLight: #92b2f5;
+  --primary: #ff6b6b;
+  --bars: #1A2E66;
+  --text: #333333;
+  --grey: #e0e0e0;
+  --lighterGrey: #eeeded;
+  --danger: #fa0606;
+  --header: #004646;
+}
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background);
+  height: max-content;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.custom-dark::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000000;
+  opacity: 0.5;
+}
