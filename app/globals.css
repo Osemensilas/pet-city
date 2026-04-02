@@ -82,12 +82,15 @@ body {
   #frequently{
     height: max-content;
     width: 100%;
-    padding: 10px 40px;
+    padding: 10px 10px;
     background: var(--accent);
   }
   .frequent-question{
     padding: 10px;
     margin-bottom: 20px;
+  }
+  .brands-container{
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
