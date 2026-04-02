@@ -36,3 +36,8 @@ body {
   background: #000000;
   opacity: 0.5;
 }
+
+.brands-container{
+  display: grid;
+  grid-template-columns: repeat(1fr, 4); 
+}
