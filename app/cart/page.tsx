@@ -117,10 +117,10 @@ const Page = () => {
         }
     },[updateCart]);
 
-    const trashClicked = async (e) => {
+    const trashClicked = async (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
         
-        const itemId = e.currentTarget.value;
+        const itemId = (e.currentTarget as HTMLButtonElement).value;
     }
 
     const continueShopping = () => {
@@ -144,7 +144,7 @@ const Page = () => {
         }
     },[])
 
-    const checkoutClicked = async (e) => {
+    const checkoutClicked = async (e: React.MouseEvent<HTMLButtonElement>) => {
 
         e.preventDefault();
 
