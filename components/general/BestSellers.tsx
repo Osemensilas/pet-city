@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
+import { useRouter } from "next/navigation";
 
 const BestSeller = () => {
 
@@ -14,6 +15,8 @@ const BestSeller = () => {
         image: string;
         age: string;
     };
+    
+    const router = useRouter();
 
     const [products, setProducts] = useState<Product[]>([]);
 
