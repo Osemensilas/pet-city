@@ -77,7 +77,7 @@ const Page = () => {
   return (
     <>
       <section className="min-h-screen h-max w-screen flex gap-3 px-4 sm:px-10 py-10">
-        <div className="h-max w-[20%] bg-accent rounded p-3">
+        <div className="h-max w-[20%] bg-accent rounded p-3 hidden sm:block">
           <div className="h-max w-full mb-5">
             <h2 className="text-xl font-bold mb-2">Pet</h2>
             <div className="h-max w-full border-t border-b border-grey py-3 mt-5">
