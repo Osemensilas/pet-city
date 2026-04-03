@@ -9,6 +9,7 @@ const BestSeller = () => {
 
     type Product = {
         id: number;
+        productId: string;
         name: string;
         price: number;
         stock: number;
@@ -23,6 +24,7 @@ const BestSeller = () => {
     const bestSellers = [
         {
             id: 1,
+            productId: "produwje",
             name: "Nulo",
             price: 5000,
             stock: 5,
@@ -31,6 +33,7 @@ const BestSeller = () => {
         },
         {
             id: 2,
+            productId: "produwje",
             name: "Hills Science Diet",
             price: 7500,
             stock: 10,
@@ -39,6 +42,7 @@ const BestSeller = () => {
         },
         {
             id: 3,
+            productId: "produwje",
             name: "Hills Science Diet",
             price: 5000,
             stock: 0,
@@ -47,6 +51,7 @@ const BestSeller = () => {
         },
         {
             id: 4,
+            productId: "produwje",
             name: "Hills Science Diet",
             price: 7500,
             stock: 23,
@@ -55,6 +60,7 @@ const BestSeller = () => {
         },
         {
             id: 5,
+            productId: "produwje",
             name: "Hills Science Diet",
             price: 5000,
             stock: 16,
@@ -63,6 +69,7 @@ const BestSeller = () => {
         },
         {
             id: 6,
+            productId: "produwje",
             name: "Hills Science Diet",
             price: 7500,
             stock: 4,
@@ -71,6 +78,7 @@ const BestSeller = () => {
         },
         {
             id: 7,
+            productId: "produwje",
             name: "Hills Science Diet",
             price: 5000,
             stock: 0,
@@ -79,6 +87,7 @@ const BestSeller = () => {
         },
         {
             id: 8,
+            productId: "produwje",
             name: "Hills Science Diet",
             price: 7500,
             stock: 16,
