@@ -19,59 +19,59 @@ const Page = () => {
   const ourProducts = [
       {
           id: 1,
-          name: "Hills Science Diet",
+          name: "Nulo",
           price: 5000,
           stock: "In stock",
           image: "/nulo_cat_feed1.png"
       },
       {
           id: 2,
-          name: "Hills Science Diet",
+          name: "Nulo",
           price: 7500,
           stock: "In stock",
           image: "/nulo_cat_feed2.png"
       },
       {
           id: 3,
-          name: "Hills Science Diet",
+          name: "Nulo",
           price: 5000,
           stock: "In stock",
           image: "/nulo_cat_feed3.png"
       },
       {
           id: 4,
-          name: "Hills Science Diet",
+          name: "Nulo",
           price: 7500,
           stock: "In stock",
           image: "/nulo_cat_feed4.png"
       },
       {
           id: 5,
-          name: "Hills Science Diet",
+          name: "Royal Canis",
           price: 5000,
           stock: "In stock",
-          image: "/best1.jpg"
+          image: "/royal_canis_dog1.png"
       },
       {
           id: 6,
-          name: "Hills Science Diet",
+          name: "Royal Canis",
           price: 7500,
           stock: "In stock",
-          image: "/best2.jpg"
+          image: "/royal_canis_dog2.png"
       },
       {
           id: 7,
-          name: "Hills Science Diet",
+          name: "Royal Canis",
           price: 5000,
           stock: "In stock",
-          image: "/best1.jpg"
+          image: "/royal_canis_dog3.png"
       },
       {
           id: 8,
-          name: "Hills Science Diet",
+          name: "Royal Canis",
           price: 7500,
           stock: "In stock",
-          image: "/best2.jpg"
+          image: "/royal_canis_dog4.png"
       }
   ];
   
