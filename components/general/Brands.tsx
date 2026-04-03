@@ -9,7 +9,7 @@ const Brands = () => {
     type brand = {
         id: number,
         name: string,
-        image: string 
+        image: string,
     }
     
     const [brands, setBrands] = useState<brand[]>([]);
@@ -17,8 +17,8 @@ const Brands = () => {
     const ourBrands = [
         {
             id: 1,
-            name: "Purina",
-            image: "brand1.jpg"
+            name: "nulo",
+            image: "nulo1.jpg",
         },
         {
             id: 2,
@@ -65,9 +65,9 @@ const Brands = () => {
             <div className="h-max w-full brands-container gap-3 justify-between">
                 {
                     ourBrands.map((brand, index) => (
-                <Link href="/shop-by-brand?brand=brand1" key={index} className="h-max w-max flex">
+                <Link href={`/shop-by-brand?brand=${brand.name}`} key={index} className="h-max w-max flex">
                     <div className="relative h-[100px] w-[120px]">
-                        <Image src={"/pl1.jpg"} alt="best seller 1" fill />
+                        <Image src={`${brand.image}`} alt="best seller 1" fill />
                     </div>
                 </Link>
                     ))
