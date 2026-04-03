@@ -1,3 +1,14 @@
+type Product = {
+    id: number;
+    productId: string;
+    name: string;
+    price: number;
+    stock: number;
+    image: string;
+    age: string;
+    sold: number;
+};
+
 export const products = [
         {
         id: 1,
