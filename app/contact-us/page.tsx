@@ -46,7 +46,7 @@ const Page = () => {
               <input type="text" className="text-base px-5 h-10 w-full border rounded outline-none border-grey" name="email" placeholder="Email Address" />
             </div>
             <div className="h-max w-full">
-              <textArea type="text" className="text-base px-5 max-h-[150px] min-h-[150px] max-w-full min-w-full border rounded outline-none border-grey" name="message"placeholder="Your Message" ></textArea>
+              <textarea type="text" className="text-base px-5 max-h-[150px] min-h-[150px] max-w-full min-w-full border rounded outline-none border-grey" name="message"placeholder="Your Message" ></textarea>
             </div>
           </div>
           <div className="h-max w-full py-5 mt-5 border-t border-grey">
