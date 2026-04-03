@@ -22,28 +22,28 @@ const Page = () => {
           name: "Hills Science Diet",
           price: 5000,
           stock: "In stock",
-          image: "/best1.jpg"
+          image: "/nulo_cat_feed1.png"
       },
       {
           id: 2,
           name: "Hills Science Diet",
           price: 7500,
           stock: "In stock",
-          image: "/best2.jpg"
+          image: "/nulo_cat_feed2.png"
       },
       {
           id: 3,
           name: "Hills Science Diet",
           price: 5000,
           stock: "In stock",
-          image: "/best1.jpg"
+          image: "/nulo_cat_feed3.png"
       },
       {
           id: 4,
           name: "Hills Science Diet",
           price: 7500,
           stock: "In stock",
-          image: "/best2.jpg"
+          image: "/nulo_cat_feed4.png"
       },
       {
           id: 5,
