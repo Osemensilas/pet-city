@@ -12,20 +12,8 @@ const Page = () => {
     const [updateCart, setUpdateCart] = useState(false);
     const [itemId, setItemId] = useState('');
     const [totalAmount, setTotalAmount] = useState(0);
-    const [totalDomainAmount, setTotalDomainAmount] = useState(0);
-    const [displayDomain, setDisplayDomain] = useState(false);
-    const [totalHostingAmount, setTotalHostingAmount] = useState(0);
-    const [displayHosting, setDisplayHosting] = useState(false);
-    const [totalEmailAmount, setTotalEmailAmount] = useState(0);
-    const [displayEmail, setDisplayEmail] = useState(false);
-    const [totalSslAmount, setTotalSslAmount] = useState(0);
-    const [displaySSL, setDisplaySSL] = useState(false);
-    const [totalWebAppAmount, setTotalWebAppAmount] = useState(0);
-    const [displayWebApp, setDisplayWebApp] = useState(false);
     const [updateCartTotal, setUpdateCartTotal] = useState(false);
     const [gateway, setGateWay] = useState('flutterwave');
-    const [vat, setVat] = useState(0);
-    const [showVat, setShowVat] = useState(false);
 
     async function totalData(){
         try{
@@ -90,18 +78,7 @@ const Page = () => {
         if (updateCartTotal){
             totalData();
         }
-
-        function getVat(){
-            if (displayDomain === true || displayHosting === true || 
-                displayEmail === true || displaySSL === true || displayWebApp === true) {
-                setShowVat(true);
-            }else{
-                setShowVat(false);
-            }
-        }
-
-        getVat();
-    }, [updateCartTotal, displayDomain, displayEmail, displayHosting, displaySSL, displayWebApp])
+    }, [updateCartTotal])
     
 
     async function cartItems(){
@@ -207,7 +184,7 @@ const Page = () => {
                     </div>
                 </div>
                 <div className="sm:w-[30%] w-full h-max">
-                    <div className="h-max w-full bg-background rounded text-accent p-5">
+                    <div className="h-max w-full bg-header rounded text-accent p-5">
                         <h2 className="pb-4 font-semibold text-xl sm:text-2xl border-b border-grey mb-4">CART SUMMARY</h2>
                         <div className={`h-max w-full mb-2 pb-1 border-b border-grey flex items-center justify-between
                             ${displayDomain ? '' : 'hidden'}
