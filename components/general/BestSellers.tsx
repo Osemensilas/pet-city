@@ -5,13 +5,13 @@ import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import ProductCard from "../ui/ProductCard";
-import { products } from "@/data/Products";
+import { Product, products } from "@/data/Products";
 
 const BestSeller = () => {
     
     const router = useRouter();
 
-    const bestSellers = [... products].sort((a, b) => (b.sold - a.sold)).slice(0, 8);
+    const bestSellers: Product[] = [... products].sort((a, b) => (b.sold - a.sold)).slice(0, 8);
 
     const cardRef = useRef<HTMLDivElement | null>(null);
 
