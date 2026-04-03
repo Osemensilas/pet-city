@@ -218,7 +218,7 @@ const Page = () => {
                   ourProducts.map((product, index) => (
                     <div key={index} className="h-max w-max bg-accent rounded p-3">
                       <div className="relative h-[150px] w-[180px]">
-                          <Image src={product.image} alt="best seller 1" fill />
+                          <Image src={`${product.image}`} alt="best seller 1" fill />
                       </div>
                       <div className="w-[180px] h-[100px] mt-2 pb-2">
                           <div className="h-max w-full flex items-center justify-between">
@@ -238,17 +238,22 @@ const Page = () => {
             </div>
             <div className="h-max w-full mt-10">
               <div className="h-max w-full flex gap-3 items-center justify-center">
-                <button type="button" className="p-2 bg-primary text-background rounded">Prev</button>
+                <button type="button" className="p-2 bg-primary text-background rounded">
+                  <i className="fa-solid fa-chevron-left text-primary text-2xl"></i>
+
+                </button>
                 <ul className="h-max w-max flex items-center gap-2">
                   <li className="border h-10 w-10 flex items-center justify-center border-primary text-primary rounded-full">1</li>
-                  <li className="border h-10 w-10 flex items-center justify-center border-primary text-primary rounded-full">2</li>
+                  <li className="border h-10 w-10 flex items-center justify-center border-primary text-primary rounded-full hidden sm:block">2</li>
                   <li className="text-primary">...</li>
                 <li className="border h-10 w-10 flex items-center justify-center border-primary text-primary rounded-full">5</li>
                   <li className="text-primary">...</li>
-                  <li className="border h-10 w-10 flex items-center justify-center border-primary text-primary rounded-full">9</li>
+                  <li className="border h-10 w-10 flex items-center justify-center border-primary text-primary rounded-full hidden sm:block">9</li>
                   <li className="border h-10 w-10 flex items-center justify-center border-primary text-primary rounded-full">10</li>
                 </ul>
-                <button type="button" className="p-2 bg-primary text-background rounded">Next</button>
+                <button type="button" className="p-2 bg-primary text-background rounded">
+                  <i className="fa-solid fa-chevron-right text-primary text-2xl"></i>
+                </button>
               </div>
             </div>
           </div>
