@@ -49,7 +49,7 @@ const BestSeller = () => {
                     <div ref={cardRef} className="w-max h-max flex items-center gap-5">
                         {
                             bestSellers.map((product, index) => (
-                        <ProductCard key={index} product={product} />
+                        <ProductCard key={index} />
                             ))
                         }
                     </div>
