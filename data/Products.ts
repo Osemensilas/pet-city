@@ -9,7 +9,7 @@ type Product = {
     sold: number;
 };
 
-export const products = [
+export const products: Product[] = [
         {
         id: 1,
         productId: "prodb73738",
