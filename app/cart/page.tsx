@@ -17,56 +17,7 @@ const Page = () => {
 
     async function totalData(){
         try{
-            let url = "https://backend.iruhost.com/api/cart-total-price";
-
-            const response = await axios.get(url, {
-                headers: {
-                    "Content-Type" : "application/json",
-                },withCredentials: true,
-            })
-
-            console.log(response.data);
-
-            if (response.data.status === "success"){
-
-                setTotalAmount(response.data.main_total);
-                setVat(response.data.vat);
-
-                if (response.data.totalDomainPrice < 1){
-                    setDisplayDomain(false);
-                }else{
-                    setDisplayDomain(true);
-                    setTotalDomainAmount(response.data.totalDomainPrice)
-                }
-
-                if (response.data.hosting_present === false){
-                    setDisplayHosting(false);
-                }else{
-                    setDisplayHosting(true);
-                    setTotalHostingAmount(response.data.totalHostingPrice)
-                }
-
-                if (response.data.totalEmailPrice < 1){
-                    setDisplayEmail(false);
-                }else{
-                    setDisplayEmail(true);
-                    setTotalEmailAmount(response.data.totalEmailPrice)
-                }
-
-                if (response.data.totalSslPrice < 1){
-                    setDisplaySSL(false);
-                }else{
-                    setDisplaySSL(true);
-                    setTotalSslAmount(response.data.totalSslPrice)
-                }
-
-                if (response.data.totalWebAppPrice < 1){
-                    setDisplayWebApp(false);
-                }else{
-                    setDisplayWebApp(true);
-                    setTotalWebAppAmount(response.data.totalWebAppPrice)
-                }
-            }
+            
         }catch(err){
             console.log("Error retrieving total price data: ", err);
         }
