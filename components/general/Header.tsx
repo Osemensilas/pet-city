@@ -9,7 +9,7 @@ const Header = () => {
     const router = useRouter();
     const currentPath = usePathname();
 
-    const [activeUser, setActiveUser] = useState(true);
+    const [activeUser, setActiveUser] = useState(false);
     const [showNav, setShowNav] = useState(false);
     
     const hamClicked = () => {
