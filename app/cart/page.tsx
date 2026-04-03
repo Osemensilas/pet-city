@@ -186,10 +186,8 @@ const Page = () => {
                 <div className="sm:w-[30%] w-full h-max">
                     <div className="h-max w-full bg-header rounded text-accent p-5">
                         <h2 className="pb-4 font-semibold text-xl sm:text-2xl border-b border-grey mb-4">CART SUMMARY</h2>
-                        <div className={`h-max w-full mb-2 pb-1 border-b border-grey flex items-center justify-between
-                            ${displayDomain ? '' : 'hidden'}
-                            `}>
-                            <p className="text-accent text-sm">Domain Total:</p>
+                        <div className={`h-max w-full mb-2 pb-1 border-b border-grey flex items-center justify-between`}>
+                            <p className="text-accent text-sm">Items:</p>
                             <div className="text-accent text-sm">"₦"<span className="">{Number(3000).toLocaleString()}</span></div>
                         </div>
                         <div className="h-max w-full mb-4 border-b border-grey flex items-center justify-between">
