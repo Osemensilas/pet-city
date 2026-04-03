@@ -172,9 +172,9 @@ const Page = () => {
               </div>
             </div>
           </div>
-            <div className="">
-              <button className="" type="button">Apply</button>
-              <button type="button" type="button">Cancel</button>
+            <div className="h-max w-full flex items-start gap-3 mt-5">
+              <button className="bg-primary text-background px-4 py-2 rounded" type="button">Apply</button>
+              <button className="bg-transparent text-primary border border-primary rounded px-4 py-2" type="button">Cancel</button>
             </div>
           </div>
         </div>
