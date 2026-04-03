@@ -1,13 +1,4 @@
-type Product = {
-    id: number;
-    productId: string;
-    name: string;
-    price: number;
-    stock: number;
-    image: string;
-    age: string;
-    sold: number;
-};
+import { Product } from "@/data/Products";
 
 type Props = {
   product: Product;
