@@ -87,7 +87,7 @@ const Page = () => {
         <div className={`h-max w-full sm:w-[20%] bg-accent rounded p-3 sm:block
         ${showFilter ? "absolute top-0 left-0 flex flex-wrap gap-3 items-start" : "hidden"}
         `}>
-          <div className="h-max w-full mb-5">
+          <div className="h-max w-max sm:w-full mb-5">
             <h2 className="text-xl font-bold mb-2">Pet</h2>
             <div className="h-max w-full border-t border-b border-grey py-3 mt-5">
               <div className="h-max w-full flex items-center gap-1 mb-2">
@@ -100,7 +100,7 @@ const Page = () => {
               </div>
             </div>
           </div>
-          <div className="h-max w-full mb-5">
+          <div className="h-max w-max sm:w-full mb-5">
             <h2 className="text-xl font-bold mb-2">Category</h2>
             <div className="h-max w-full border-t border-b border-grey py-3 mt-5">
               <div className="h-max w-full flex items-center gap-1 mb-2">
@@ -121,7 +121,7 @@ const Page = () => {
               </div>
             </div>
           </div>
-          <div className="h-max w-full mb-5">
+          <div className="h-max w-max sm:w-full mb-5">
             <h2 className="text-xl font-bold mb-2">Food Form</h2>
             <div className="h-max w-full border-t border-b border-grey py-3 mt-5">
               <div className="h-max w-full flex items-center gap-1 mb-2">
@@ -146,7 +146,7 @@ const Page = () => {
               </div>
             </div>
           </div>
-          <div className="h-max w-full mb-5">
+          <div className="h-max w-max sm:w-full mb-5">
             <h2 className="text-xl font-bold mb-2">Brand</h2>
             <div className="h-max w-full border-t border-b border-grey py-3 mt-5">
               <div className="h-max w-full flex items-center gap-1 mb-2">
