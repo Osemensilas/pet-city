@@ -95,6 +95,10 @@ const Page = () => {
       setShowFilter(false);
     }
   }
+  
+  const viewProduct = (x) => {
+    
+  }
 
   return (
     <>
