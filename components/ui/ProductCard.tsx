@@ -9,7 +9,7 @@ type Props = {
     sold: number;
 };
 
-const ProductCard = ({product}: Props) => {
+const ProductCard: React.FC<Props> = ( {product} ) => {
     
     const viewProduct = (x: string) => {
         router.push(`/product?id=${x}`);

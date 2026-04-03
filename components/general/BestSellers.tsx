@@ -28,6 +28,8 @@ const BestSeller = () => {
             cardRef.current.scrollLeft -= 250;
         }
     }
+    
+
 
     return ( 
         <>
@@ -49,7 +51,7 @@ const BestSeller = () => {
                     <div ref={cardRef} className="w-max h-max flex items-center gap-5">
                         {
                             bestSellers.map((product, index) => (
-                        <ProductCard key={index} />
+                        <ProductCard key={index} product={product} />
                             ))
                         }
                     </div>
