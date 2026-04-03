@@ -22,7 +22,9 @@ const Header = () => {
 
     return ( 
         <>
-        <header className="h-[100px] w-screen px-4 sm:px-10">
+        <header className={`h-[100px] w-screen px-4 sm:px-10
+            ${currentPath === "/login" ? "hidden" : ""}
+            `}>
             <div className="h-full sm:h-[50%] w-full flex items-center justify-between">
                 <div className="h-max w-max">
                     <h2 className="text-3xl font-bold text-header">Pet<span className="text-primary">City</span></h2>
@@ -52,7 +54,7 @@ const Header = () => {
             <div className={`h-[100vh] sm:h-[50%] w-full flex-col sm:flex-row items-start sm:items-center justify-between
             ${showNav ? "flex absolute top-0 left-0 z-5" : "hidden sm:flex"}
             `}>
-                <ul className="h-full sm:h-max w-full sm:w-max flex flex-col sm:flex-row items-start sm:items-center gap-4 bg-accent px-5 py-10 sm:px-0 sm:py-0">
+                <ul className="h-full sm:h-max w-full sm:w-max flex flex-col sm:flex-row items-start sm:items-center gap-4 bg-accent sm:bg-transparent px-5 py-10 sm:px-0 sm:py-0">
                     <li className={`text-header text-base font-medium hover:text-primary transition-colors duration-300 group
                     ${currentPath === "/" ? "text-primary" : ""}
                         `}>

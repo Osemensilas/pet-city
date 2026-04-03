@@ -1,9 +1,18 @@
+'use client';
+
 import Link from "next/link";
+import { useRouter, usePathname } from "next/navigation";
 
 const Footer = () => {
+
+    const router = useRouter();
+    const currentPath = usePathname();
+
     return ( 
         <>
-        <footer className="h-max w-screen px-10 py-10">
+        <footer className={`h-max w-screen px-10 py-10
+            ${currentPath === "/login" ? "hidden" : ""}
+            `}>
             <div className="h-max w-full flex sm:flex-row flex-col items-start justify-between border-b bordergrey pb-3 mb-3">
                 <div className="h-max w-full sm:w-max flex flex-col items-center gap-3">
                     <h2 className="text-3xl font-bold text-header">Pet<span className="text-primary">City</span></h2>
