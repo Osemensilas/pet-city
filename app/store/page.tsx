@@ -252,11 +252,11 @@ const Page = () => {
                 </button>
                 <ul className="h-max w-max flex items-center gap-2">
                   <li className="border h-10 w-10 flex items-center justify-center border-primary text-primary rounded-full">1</li>
-                  <li className="border h-10 w-10 flex items-center justify-center border-primary text-primary rounded-full hidden sm:block">2</li>
+                  <li className="border h-10 w-10 items-center justify-center border-primary text-primary rounded-full hidden sm:flex">2</li>
                   <li className="text-primary">...</li>
                 <li className="border h-10 w-10 flex items-center justify-center border-primary text-background rounded-full bg-primary">5</li>
                   <li className="text-primary">...</li>
-                  <li className="border h-10 w-10 flex items-center justify-center border-primary text-primary rounded-full hidden sm:block">9</li>
+                  <li className="border h-10 w-10 items-center justify-center border-primary text-primary rounded-full hidden sm:flex">9</li>
                   <li className="border h-10 w-10 flex items-center justify-center border-primary text-primary rounded-full">10</li>
                 </ul>
                 <button type="button" className="p-2 bg-primary text-background rounded">
