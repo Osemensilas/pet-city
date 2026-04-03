@@ -22,6 +22,9 @@ const Page = () => {
                             <input type="password" id="password" className="h-10 w-full rounded border border-grey outline-none px-5" />
                         </div>
                     </div>
+                    <div className="h-max w-full mt-5">
+                        Don't have an account? <a href="/register" className="text-primary hover:underline">Register</a>
+                    </div>
                     <div className="h-max w-full py-5 mt-5 border-t border-grey">
                         <button className="w-full rounded bg-primary py-2 text-center text-background" type="submit">Login</button>
                     </div>
