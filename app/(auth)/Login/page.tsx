@@ -5,7 +5,7 @@ const Page = () => {
         <>
         <section className="h-sreen w-screen flex">
             <div className="hidden sm:block w-1/2 h-full relative">
-                <Image src="/" fill className="" alt="login page image" />
+                <Image src="/login-image.jpg" fill className="" alt="login page image" />
             </div>
             <div className="w-full sm:w-1/2 h-full flex justify-center items-center">
                 <form className="w-full sm:w-[450px] bg-accent rounded" onSubmit={(e) => e.preventDefault()}>
