@@ -247,7 +247,7 @@ const Page = () => {
             <div className="h-max w-full mt-10">
               <div className="h-max w-full flex gap-3 items-center justify-center">
                 <button type="button" className="p-2 bg-primary text-background rounded">
-                  <i className="fa-solid fa-chevron-left text-primary text-2xl"></i>
+                  <i className="fa-solid fa-chevron-left text-background text-2xl"></i>
 
                 </button>
                 <ul className="h-max w-max flex items-center gap-2">
@@ -260,7 +260,7 @@ const Page = () => {
                   <li className="border h-10 w-10 flex items-center justify-center border-primary text-primary rounded-full">10</li>
                 </ul>
                 <button type="button" className="p-2 bg-primary text-background rounded">
-                  <i className="fa-solid fa-chevron-right text-primary text-2xl"></i>
+                  <i className="fa-solid fa-chevron-right text-background text-2xl"></i>
                 </button>
               </div>
             </div>
