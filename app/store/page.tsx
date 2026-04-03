@@ -85,7 +85,7 @@ const Page = () => {
     <>
       <section className="min-h-screen h-max w-screen flex gap-3 px-4 sm:px-10 sm:py-10 py-0">
         <div className={`h-max w-full sm:w-[20%] bg-accent rounded p-3 sm:block
-        ${showFilter ? "absolute top-0 left-0 flex flex-wrap gap-3 items-start" : "hidden"}
+        ${showFilter ? "absolute top-0 left-0 flex flex-wrap gap-3 items-start z-10" : "hidden"}
         `}>
           <div className="h-max w-max sm:w-full mb-5">
             <h2 className="text-xl font-bold mb-2">Pet</h2>
