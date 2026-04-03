@@ -244,7 +244,7 @@ const Page = () => {
                 )
               }
             </div>
-            <div className="h-max w-full mt-10">
+            <div className="h-max w-full mt-20">
               <div className="h-max w-full flex gap-3 items-center justify-center">
                 <button type="button" className="p-2 bg-primary text-background rounded">
                   <i className="fa-solid fa-chevron-left text-background text-2xl"></i>
