@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
-import useRouter from "next/navigation";
+import { useRouter } from "next/navigation";
 
 const Page = () => {
 
