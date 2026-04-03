@@ -217,10 +217,10 @@ const Page = () => {
                 ) : (
                   ourProducts.map((product, index) => (
                     <div key={index} className="h-max w-max bg-accent rounded p-3">
-                      <div className="relative h-[150px] w-[180px]">
+                      <div className="relative h-[100px] sm:h-[150px] w-[120px] sm:w-[180px]">
                           <Image src={`${product.image}`} alt="best seller 1" fill />
                       </div>
-                      <div className="w-[180px] h-[100px] mt-2 pb-2">
+                      <div className="w-[120px] sm:w-[180px] h-[100px] mt-2 pb-2">
                           <div className="h-max w-full flex items-center justify-between">
                               <h3 className="text-base font-semibold">{product.name}</h3>
                               <p>{product.stock}</p>
