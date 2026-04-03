@@ -45,7 +45,7 @@ const Header = () => {
                     </Link>
                 </div>
                 <div onClick={hamClicked} className={`hamburger sm:hidden block
-                ${showNav ? "z-10" : ""}
+                ${showNav ? "z-50" : ""}
                 `}>
                     <div className={`ham-icon ${showNav ? "active" : ""}
                     `}></div>
