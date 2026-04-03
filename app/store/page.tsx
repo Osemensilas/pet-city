@@ -85,7 +85,7 @@ const Page = () => {
     <>
       <section className="min-h-screen h-max w-screen flex gap-3 px-4 sm:px-10 sm:py-10 py-0">
         <div className={`h-max w-full sm:w-[20%] bg-accent rounded p-3 sm:block
-        ${showFilter ? "absolute z-10" : "hidden"}
+        ${showFilter ? "fixed z-10" : "hidden"}
         `}>
           <div className={`${showFilter ? "h-max w-full items-start flex flex-wrap gap-3" : ""}`}>
           <div className="h-max w-max sm:w-full mb-5">
