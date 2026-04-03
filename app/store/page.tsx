@@ -146,7 +146,7 @@ const Page = () => {
           </div>
           <div className="h-max w-max sm:w-full mb-5">
             <h2 className="text-xl font-bold mb-2">Food Form</h2>
-            <div className="h-max w-full border-t-none sm:border-t border-b-none sm:border-b border border-grey py-3 mt-5">
+            <div className="h-max w-full border-t-none sm:border-t border-b-none sm:border-b border-grey py-3 mt-5">
               <div className="h-max w-full flex items-center gap-1 mb-2">
                 <input type="checkbox" className="cursor-pointer" name="dry" id="dry" />
                 <label htmlFor="dry" className="cursor-pointer">Dry</label>
