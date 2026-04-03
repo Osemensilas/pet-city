@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
+import useRouter from "next/navigation";
 
 const Page = () => {
 
@@ -13,6 +14,8 @@ const Page = () => {
     stock: string;
     image: string;
   };
+  
+  const router = useRouter();
 
   const [products, setProducts] = useState<Product[]>([]);
   const [showFilter, setShowFilter] = useState(false);
@@ -96,8 +99,8 @@ const Page = () => {
     }
   }
   
-  const viewProduct = (x) => {
-    
+  const viewProduct = (x: string) => {
+    router.push(`/product?id=${x}`);
   }
 
   return (
