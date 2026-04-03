@@ -90,7 +90,7 @@ const Page = () => {
           <div className={`${showFilter ? "h-max w-full items-start flex flex-wrap gap-3" : ""}`}>
           <div className="h-max w-max sm:w-full mb-5">
             <h2 className="text-xl font-bold mb-2">Pet</h2>
-            <div className="h-max w-full border-t border-b border-transparent sm:border-grey py-3 mt-5">
+            <div className="h-max w-full border-t-none sm:border-t border-b-none sm:border-b border-grey py-3 mt-5">
               <div className="h-max w-full flex items-center gap-1 mb-2">
                 <input type="checkbox" className="cursor-pointer" name="cat" id="cat" />
                 <label htmlFor="cat" className="cursor-pointer">Cat</label>
