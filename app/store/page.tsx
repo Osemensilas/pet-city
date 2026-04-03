@@ -202,7 +202,7 @@ const Page = () => {
         </div>
         <div className="h-max w-fill sm:w-[80%] flex flex-col gap-3">
           <div className="h-max w-full bg-accent rounded p-3 flex justify-between sm:justify-center items-center">
-            <h2 className="text-center text-3xl font-bold">Cat Section</h2>
+            <h2 className="text-center text-3xl font-bold">Products for Cats</h2>
             <button onClick={filterClicked} className="h-max w-max block sm:hidden">
               <i className="fa-solid fa-filter"></i>
             </button>

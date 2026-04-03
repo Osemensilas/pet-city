@@ -10,7 +10,7 @@ const BestSeller = () => {
         id: number;
         name: string;
         price: number;
-        stock: string;
+        stock: number;
         image: string;
     };
 
@@ -21,56 +21,56 @@ const BestSeller = () => {
             id: 1,
             name: "Hills Science Diet",
             price: 5000,
-            stock: "In stock",
+            stock: 5,
             image: "/best1.jpg"
         },
         {
             id: 2,
             name: "Hills Science Diet",
             price: 7500,
-            stock: "In stock",
+            stock: 10,
             image: "/best2.jpg"
         },
         {
             id: 3,
             name: "Hills Science Diet",
             price: 5000,
-            stock: "In stock",
+            stock: 0,
             image: "/best1.jpg"
         },
         {
             id: 4,
             name: "Hills Science Diet",
             price: 7500,
-            stock: "In stock",
+            stock: 23,
             image: "/best2.jpg"
         },
         {
             id: 5,
             name: "Hills Science Diet",
             price: 5000,
-            stock: "In stock",
+            stock: 16,
             image: "/best1.jpg"
         },
         {
             id: 6,
             name: "Hills Science Diet",
             price: 7500,
-            stock: "In stock",
+            stock: 4,
             image: "/best2.jpg"
         },
         {
             id: 7,
             name: "Hills Science Diet",
             price: 5000,
-            stock: "In stock",
+            stock: 0,
             image: "/best1.jpg"
         },
         {
             id: 8,
             name: "Hills Science Diet",
             price: 7500,
-            stock: "In stock",
+            stock: 16,
             image: "/best2.jpg"
         }
     ];
@@ -126,12 +126,12 @@ const BestSeller = () => {
                                     </div>
                                     <div className="w-[180px] h-[100px] mt-2 pb-2">
                                         <div className="h-max w-full flex items-center justify-between">
-                                            <h3 className="text-base font-semibold">Hills</h3>
-                                            <p>In stock</p>
+                                            <h3 className="text-base font-semibold">{product.name}</h3>
+                                            <p>{product.stock > 0 ? "In Stock" : "Not available"}</p>
                                         </div>
                                         <h3 className="text-base font-semibold">Science Diet</h3>
                                         <div className="w-full h-max pt-2 flex items-center justify-between">
-                                            <span className="text-text text-base font-bold">₦{(5000).toLocaleString()}</span>
+                                            <span className="text-text text-base font-bold">₦{(product.price).toLocaleString()}</span>
                                             <button type="button" className="border-primary border text-primary px-3 py-1 rounded hover:bg-primary hover:text-background transition-colors duration-300 ml-5 text-sm"><i className="fa fa-arrow-right"></i> <span> Add</span></button>
                                         </div>
                                     </div>
