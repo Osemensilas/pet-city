@@ -14,6 +14,7 @@ const Page = () => {
   };
 
   const [products, setProducts] = useState<Product[]>([]);
+  const [showFilter, setShowFilter] = useState(false);
 
   const ourProducts = [
       {
@@ -73,11 +74,19 @@ const Page = () => {
           image: "/best2.jpg"
       }
   ];
+  
+  const filterClicked = (e: React.MouseEvent<HTMLButtonElement>) => {
+    if (!showFilter){
+      setShowFilter(true);
+    }
+  }
 
   return (
     <>
       <section className="min-h-screen h-max w-screen flex gap-3 px-4 sm:px-10 sm:py-10 py-0">
-        <div className="h-max w-[20%] bg-accent rounded p-3 hidden sm:block">
+        <div className={`h-max w-full sm:w-[20%] bg-accent rounded p-3 sm:block
+        ${showFilter ? "absolute top-0 left-0 block" : "hidden"}
+        `}>
           <div className="h-max w-full mb-5">
             <h2 className="text-xl font-bold mb-2">Pet</h2>
             <div className="h-max w-full border-t border-b border-grey py-3 mt-5">
@@ -166,7 +175,7 @@ const Page = () => {
         <div className="h-max w-fill sm:w-[80%] flex flex-col gap-3">
           <div className="h-max w-full bg-accent rounded p-3 flex justify-between sm:justify-center items-center">
             <h2 className="text-center text-3xl font-bold">Cat Section</h2>
-            <button className="h-max w-max block sm:hidden">
+            <button onClick={filterClicked} className="h-max w-max block sm:hidden">
               <i className="fa-solid fa-filter"></i>
             </button>
           </div>
