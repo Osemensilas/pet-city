@@ -26,6 +26,11 @@ body {
   overflow-x: hidden;
 }
 
+.login{
+  height: 100vh;
+  width: 100vw;
+}
+
 .custom-dark::after{
   content: '';
   position: absolute;

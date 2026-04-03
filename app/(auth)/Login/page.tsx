@@ -5,7 +5,7 @@ import Image from "next/image";
 const Page = () => {
     return ( 
         <>
-        <section className="h-sreen w-screen flex">
+        <section className="login h-sreen w-screen flex">
             <div className="hidden sm:block w-1/2 h-full relative">
                 <Image src="/login-image.jpg" fill className="" alt="login page image" />
             </div>
