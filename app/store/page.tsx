@@ -7,6 +7,7 @@ const Page = () => {
 
   type Product = {
     id: number;
+    productId: string;
     name: string;
     price: number;
     stock: string;
@@ -19,6 +20,7 @@ const Page = () => {
   const ourProducts = [
       {
           id: 1,
+          productId: "prodb73738",
           name: "Nulo",
           price: 5000,
           stock: "In stock",
@@ -26,6 +28,7 @@ const Page = () => {
       },
       {
           id: 2,
+          productId: "prodb7m738",
           name: "Nulo",
           price: 7500,
           stock: "In stock",
@@ -33,6 +36,7 @@ const Page = () => {
       },
       {
           id: 3,
+          productId: "prodb73v38",
           name: "Nulo",
           price: 5000,
           stock: "In stock",
@@ -40,6 +44,7 @@ const Page = () => {
       },
       {
           id: 4,
+          productId: "prodb73732",
           name: "Nulo",
           price: 7500,
           stock: "In stock",
@@ -47,6 +52,7 @@ const Page = () => {
       },
       {
           id: 5,
+          productId: "prodbi3738",
           name: "Royal Canis",
           price: 5000,
           stock: "In stock",
@@ -54,6 +60,7 @@ const Page = () => {
       },
       {
           id: 6,
+          productId: "prodb73708",
           name: "Royal Canis",
           price: 7500,
           stock: "In stock",
@@ -61,6 +68,7 @@ const Page = () => {
       },
       {
           id: 7,
+          productId: "prodb73g38",
           name: "Royal Canis",
           price: 5000,
           stock: "In stock",
@@ -68,6 +76,7 @@ const Page = () => {
       },
       {
           id: 8,
+          productId: "prodb7373u",
           name: "Royal Canis",
           price: 7500,
           stock: "In stock",
@@ -212,7 +221,7 @@ const Page = () => {
                           <h3 className="text-base font-semibold">Science Diet</h3>
                           <div className="w-full h-max pt-2 flex items-center justify-between">
                               <span className="text-text text-base font-bold">₦{(5000).toLocaleString()}</span>
-                              <button type="button" className="border-primary border text-primary px-3 py-1 rounded hover:bg-primary hover:text-background transition-colors duration-300 ml-5 text-sm"><i className="fa fa-arrow-right"></i> <span> Add</span></button>
+                              <button onClick={() => viewProduct(product.productId)} type="button" className="border-primary border text-primary px-3 py-1 rounded hover:bg-primary hover:text-background transition-colors duration-300 ml-5 text-sm"><i className="fa fa-arrow-right"></i> <span> Add</span></button>
                           </div>
                       </div>
                     </div>
