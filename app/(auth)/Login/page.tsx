@@ -1,7 +1,9 @@
 const Page = () => {
     return ( 
         <>
-        
+        <section className="h-sreen w-screen flex">
+            
+        </section>
         </>
      );
 }
