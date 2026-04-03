@@ -172,6 +172,10 @@ const Page = () => {
               </div>
             </div>
           </div>
+          <div className="">
+            <button className="" type="button">Apply</button>
+            <button type="button" type="button">Cancel</button>
+          </div>
           </div>
         </div>
         <div className="h-max w-fill sm:w-[80%] flex flex-col gap-3">
