@@ -246,7 +246,7 @@ const Page = () => {
                   <li className="border h-10 w-10 flex items-center justify-center border-primary text-primary rounded-full">1</li>
                   <li className="border h-10 w-10 flex items-center justify-center border-primary text-primary rounded-full hidden sm:block">2</li>
                   <li className="text-primary">...</li>
-                <li className="border h-10 w-10 flex items-center justify-center border-primary text-primary rounded-full">5</li>
+                <li className="border h-10 w-10 flex items-center justify-center border-primary text-background rounded-full bg-primary">5</li>
                   <li className="text-primary">...</li>
                   <li className="border h-10 w-10 flex items-center justify-center border-primary text-primary rounded-full hidden sm:block">9</li>
                   <li className="border h-10 w-10 flex items-center justify-center border-primary text-primary rounded-full">10</li>
