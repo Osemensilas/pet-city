@@ -164,7 +164,7 @@ const Page = () => {
           </div>
         </div>
         <div className="h-max w-[80%] flex flex-col gap-3">
-          <div className="h-max w-full bg-accent rounded p-3">
+          <div className="h-max w-full bg-accent rounded p-3 flex justify-between sm:justify-center items-center">
             <h2 className="text-center text-3xl font-bold">Cat Section</h2>
             <button className="h-max w-max">
               <i className="fa-solid fa-filter"></i>
