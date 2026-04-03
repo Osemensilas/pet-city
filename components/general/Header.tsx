@@ -26,7 +26,7 @@ const Header = () => {
             ${currentPath === "/login" ? "hidden" : ""}
             `}>
             <div className="h-full sm:h-[50%] w-full flex items-center justify-between">
-                <div className="h-max w-max">
+                <div className="h-max w-max" onClick={() => router.push("/")}>
                     <h2 className="text-3xl font-bold text-header">Pet<span className="text-primary">City</span></h2>
                 </div>
                 <form onSubmit={(e) => e.preventDefault()} className="h-max w-max relative hidden sm:block">
