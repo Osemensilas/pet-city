@@ -85,8 +85,9 @@ const Page = () => {
     <>
       <section className="min-h-screen h-max w-screen flex gap-3 px-4 sm:px-10 sm:py-10 py-0">
         <div className={`h-max w-full sm:w-[20%] bg-accent rounded p-3 sm:block
-        ${showFilter ? "absolute top-0 left-0 flex flex-wrap gap-3 items-start z-10" : "hidden"}
+        ${showFilter ? "absolute z-10" : "hidden"}
         `}>
+          <div className={`${showFilter ? "h-max w-full items-start flex flex-wrap gap-3" : ""}`}>
           <div className="h-max w-max sm:w-full mb-5">
             <h2 className="text-xl font-bold mb-2">Pet</h2>
             <div className="h-max w-full border-t border-b border-transparent sm:border-grey py-3 mt-5">
@@ -170,6 +171,7 @@ const Page = () => {
                 <label htmlFor="nulo" className="cursor-pointer">Nulo</label>
               </div>
             </div>
+          </div>
           </div>
         </div>
         <div className="h-max w-fill sm:w-[80%] flex flex-col gap-3">
