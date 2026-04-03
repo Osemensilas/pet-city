@@ -27,7 +27,8 @@ const Page = () => {
           name: "Nulo",
           price: 5000,
           stock: "In stock",
-          image: "/nulo_cat_feed1.png"
+          image: "/nulo_cat_feed1.png",
+          age: "adult",
       },
       {
           id: 2,
@@ -35,7 +36,8 @@ const Page = () => {
           name: "Nulo",
           price: 7500,
           stock: "In stock",
-          image: "/nulo_cat_feed2.png"
+          image: "/nulo_cat_feed2.png",
+          age: "adult",
       },
       {
           id: 3,
@@ -43,7 +45,8 @@ const Page = () => {
           name: "Nulo",
           price: 5000,
           stock: "In stock",
-          image: "/nulo_cat_feed3.png"
+          image: "/nulo_cat_feed3.png",
+          age: "adult",
       },
       {
           id: 4,
@@ -51,7 +54,8 @@ const Page = () => {
           name: "Nulo",
           price: 7500,
           stock: "In stock",
-          image: "/nulo_cat_feed4.png"
+          image: "/nulo1.png",
+          age: "adult",
       },
       {
           id: 5,
@@ -59,7 +63,8 @@ const Page = () => {
           name: "Royal Canis",
           price: 5000,
           stock: "In stock",
-          image: "/royal_canis_dog1.png"
+          image: "/royal_canis_dog1.png",
+          age: "adult",
       },
       {
           id: 6,
@@ -67,7 +72,8 @@ const Page = () => {
           name: "Royal Canis",
           price: 7500,
           stock: "In stock",
-          image: "/royal_canis_dog2.png"
+          image: "/royal_canis_dog2.png",
+          age: "adult",
       },
       {
           id: 7,
@@ -75,7 +81,8 @@ const Page = () => {
           name: "Royal Canis",
           price: 5000,
           stock: "In stock",
-          image: "/royal_canis_dog3.png"
+          image: "/royal_canis_dog3.png",
+          age: "adult",
       },
       {
           id: 8,
@@ -83,7 +90,8 @@ const Page = () => {
           name: "Royal Canis",
           price: 7500,
           stock: "In stock",
-          image: "/royal_canis_dog4.png"
+          image: "/royal_canis_dog4.png",
+          age: "adult",
       }
   ];
   

@@ -12,6 +12,7 @@ const BestSeller = () => {
         price: number;
         stock: number;
         image: string;
+        age: string;
     };
 
     const [products, setProducts] = useState<Product[]>([]);
@@ -19,59 +20,67 @@ const BestSeller = () => {
     const bestSellers = [
         {
             id: 1,
-            name: "Hills Science Diet",
+            name: "Nulo",
             price: 5000,
             stock: 5,
-            image: "/best1.jpg"
+            image: "/nulo1.png",
+            age: "adult",
         },
         {
             id: 2,
             name: "Hills Science Diet",
             price: 7500,
             stock: 10,
-            image: "/best2.jpg"
+            image: "/best2.jpg",
+            age: "adult",
         },
         {
             id: 3,
             name: "Hills Science Diet",
             price: 5000,
             stock: 0,
-            image: "/best1.jpg"
+            image: "/best1.jpg",
+            age: "adult",
         },
         {
             id: 4,
             name: "Hills Science Diet",
             price: 7500,
             stock: 23,
-            image: "/best2.jpg"
+            image: "/best2.jpg",
+            age: "adult",
         },
         {
             id: 5,
             name: "Hills Science Diet",
             price: 5000,
             stock: 16,
-            image: "/best1.jpg"
+            image: "/best1.jpg",
+            age: "adult",
         },
         {
             id: 6,
             name: "Hills Science Diet",
             price: 7500,
             stock: 4,
-            image: "/best2.jpg"
+            image: "/best2.jpg",
+            age: "adult",
         },
         {
             id: 7,
             name: "Hills Science Diet",
             price: 5000,
             stock: 0,
-            image: "/best1.jpg"
+            image: "/best1.jpg",
+            age: "adult",
         },
         {
             id: 8,
             name: "Hills Science Diet",
             price: 7500,
             stock: 16,
-            image: "/best2.jpg"
+            image: "/best2.jpg",
+            age: "adult",
         }
     ];
 
