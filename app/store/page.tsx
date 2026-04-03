@@ -180,7 +180,7 @@ const Page = () => {
           </div>
             <div className="h-max w-full flex items-start gap-3 mt-5">
               <button className="bg-primary text-background px-4 py-2 rounded" type="button">Apply</button>
-              <button onClick={cancelFilter} className="bg-transparent text-primary border border-primary rounded px-4 py-2" type="button">Cancel</button>
+              <button onClick={cancelFilter} className="bg-transparent text-primary border border-primary rounded px-4 py-2" >Cancel</button>
             </div>
           </div>
         </div>
