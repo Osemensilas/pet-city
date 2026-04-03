@@ -89,7 +89,7 @@ const Page = () => {
         `}>
           <div className="h-max w-max sm:w-full mb-5">
             <h2 className="text-xl font-bold mb-2">Pet</h2>
-            <div className="h-max w-full border-t border-b border-grey py-3 mt-5">
+            <div className="h-max w-full border-t border-b border-transparent sm:border-grey py-3 mt-5">
               <div className="h-max w-full flex items-center gap-1 mb-2">
                 <input type="checkbox" className="cursor-pointer" name="cat" id="cat" />
                 <label htmlFor="cat" className="cursor-pointer">Cat</label>
@@ -102,7 +102,7 @@ const Page = () => {
           </div>
           <div className="h-max w-max sm:w-full mb-5">
             <h2 className="text-xl font-bold mb-2">Category</h2>
-            <div className="h-max w-full border-t border-b border-grey py-3 mt-5">
+            <div className="h-max w-full border-t border-b border-transparent sm:border-grey py-3 mt-5">
               <div className="h-max w-full flex items-center gap-1 mb-2">
                 <input type="checkbox" className="cursor-pointer" name="food" id="food" />
                 <label htmlFor="food" className="cursor-pointer">Food</label>
@@ -123,7 +123,7 @@ const Page = () => {
           </div>
           <div className="h-max w-max sm:w-full mb-5">
             <h2 className="text-xl font-bold mb-2">Food Form</h2>
-            <div className="h-max w-full border-t border-b border-grey py-3 mt-5">
+            <div className="h-max w-full border-t border-b border: transparent sm:border-grey py-3 mt-5">
               <div className="h-max w-full flex items-center gap-1 mb-2">
                 <input type="checkbox" className="cursor-pointer" name="dry" id="dry" />
                 <label htmlFor="dry" className="cursor-pointer">Dry</label>
@@ -148,7 +148,7 @@ const Page = () => {
           </div>
           <div className="h-max w-max sm:w-full mb-5">
             <h2 className="text-xl font-bold mb-2">Brand</h2>
-            <div className="h-max w-full border-t border-b border-grey py-3 mt-5">
+            <div className="h-max w-full border-t border-b border-transparent sm:border-grey py-3 mt-5">
               <div className="h-max w-full flex items-center gap-1 mb-2">
                 <input type="checkbox" className="cursor-pointer" name="purina" id="purina" />
                 <label htmlFor="purina" className="cursor-pointer">Purina</label>
