@@ -166,6 +166,9 @@ const Page = () => {
         <div className="h-max w-[80%] flex flex-col gap-3">
           <div className="h-max w-full bg-accent rounded p-3">
             <h2 className="text-center text-3xl font-bold">Cat Section</h2>
+            <button className="h-max w-max">
+              <i className="fa-solid fa-filter"></i>
+            </button>
           </div>
           <div className="h-max w-full bg-accent rounded p-3">
             <div className="h-max w-full flex items-center flex-wrap gap-3 mb-5">
