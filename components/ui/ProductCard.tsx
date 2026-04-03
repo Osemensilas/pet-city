@@ -1,4 +1,4 @@
-type Props = {
+type Product = {
     id: number;
     productId: string;
     name: string;
@@ -7,6 +7,10 @@ type Props = {
     image: string;
     age: string;
     sold: number;
+};
+
+type Props = {
+  product: Product;
 };
 
 const ProductCard: React.FC<Props> = ( {product} ) => {
