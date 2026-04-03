@@ -221,16 +221,16 @@ const Page = () => {
               }
             </div>
             <div className="h-max w-full mt-10">
-              <div className="h-max w-full flex gap-3 items-center">
+              <div className="h-max w-full flex gap-3 items-center justify-center">
                 <button type="button" className="p-2 bg-primary text-background rounded">Prev</button>
                 <ul className="h-max w-max flex items-center gap-2">
-                  <li className="border h-1 w-1 flex items-center justify-center border-primary text-primary rounded-full">1</li>
-                  <li className="border h-1 w-1 flex items-center justify-center border-primary text-primary rounded-full">2</li>
+                  <li className="border h-10 w-10 flex items-center justify-center border-primary text-primary rounded-full">1</li>
+                  <li className="border h-10 w-10 flex items-center justify-center border-primary text-primary rounded-full">2</li>
                   <li className="text-primary">...</li>
-                <li className="border h-1 w-1 flex items-center justify-center border-primary text-primary rounded-full">5</li>
+                <li className="border h-10 w-10 flex items-center justify-center border-primary text-primary rounded-full">5</li>
                   <li className="text-primary">...</li>
-                  <li className="border h-1 w-1 flex items-center justify-center border-primary text-primary rounded-full">9</li>
-                  <li className="border h-1 w-1 flex items-center justify-center border-primary text-primary rounded-full">10</li>
+                  <li className="border h-10 w-10 flex items-center justify-center border-primary text-primary rounded-full">9</li>
+                  <li className="border h-10 w-10 flex items-center justify-center border-primary text-primary rounded-full">10</li>
                 </ul>
                 <button type="button" className="p-2 bg-primary text-background rounded">Next</button>
               </div>
