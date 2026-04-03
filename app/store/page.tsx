@@ -113,7 +113,7 @@ const Page = () => {
 
   return (
     <>
-      <section className="min-h-screen h-max w-screen flex gap-3 px-4 sm:px-10 sm:py-10 py-0">
+      <section className="min-h-screen h-max w-screen flex gap-3 px-2 sm:px-10 sm:py-10 py-0">
         <div className={`h-max w-full sm:w-[20%] bg-accent rounded p-3 sm:block
         ${showFilter ? "fixed z-10" : "hidden"}
         `}>
@@ -215,7 +215,7 @@ const Page = () => {
               <i className="fa-solid fa-filter"></i>
             </button>
           </div>
-          <div className="h-max w-full bg-accent rounded p-3">
+          <div className="h-max w-full bg-accent rounded p-4 sm:p-3">
             <div className="h-max w-full flex items-center flex-wrap gap-3 mb-5">
               {
                 ourProducts.length < 1 ? (
