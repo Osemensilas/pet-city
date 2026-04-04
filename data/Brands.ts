@@ -13,17 +13,17 @@
         {
             id: 2,
             name: "Purina",
-            image: "purina-brand.jpg"
+            image: "purina-brand.png"
         },
         {
             id: 3,
             name: "American Journey",
-            image: "american-journey-brand.jpg"
+            image: "american-journey-brand.png"
         },
         {
              id: 4,
              name: "Hills",
-             image: "hills-brand.jpg"
+             image: "hills-brand.png"
          },
         {
              id: 5,
