@@ -25,7 +25,7 @@ const Brands = () => {
                     allBrands.map((brand, index) => (
                 <Link href={`/store?brand=${brand.name.toLowerCase()}`} key={index} className="h-max w-max flex">
                     <div className="relative h-[100px] w-[120px]">
-                        <Image src={`/images/${brand.image}`} alt={brand.name} fill />
+                        <Image src={`images/${brand.image}`} alt={brand.name} fill />
                     </div>
                 </Link>
                     ))

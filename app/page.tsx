@@ -12,7 +12,7 @@ const HomePage = () => {
   
   const router = useRouter();
 
-  const [activeImg, setActiveImg] = useState("/image/hero1.jpg");
+  const [activeImg, setActiveImg] = useState("/images/hero1.jpg");
   const [activeIndex, setActiveIndex] = useState(1);
 
   useEffect(() => {
@@ -27,23 +27,23 @@ const HomePage = () => {
       }
 
       if (countDown === 1){
-        setActiveImg("/image/hero1.jpg");
+        setActiveImg("/images/hero1.jpg");
         setActiveIndex(1);
       }
       if (countDown === 2){
-        setActiveImg("/image/hero3.jpg");
+        setActiveImg("/images/hero3.jpg");
         setActiveIndex(2);
       }
       if (countDown === 3){
-        setActiveImg("/image/hero10.jpg");
+        setActiveImg("/images/hero10.jpg");
         setActiveIndex(3);
       }
       if (countDown === 4){
-        setActiveImg("/image/hero4.jpg");
+        setActiveImg("/images/hero4.jpg");
         setActiveIndex(4);
       }
       if (countDown === 5){
-        setActiveImg("/image/hero6.jpg");
+        setActiveImg("/images/hero6.jpg");
         setActiveIndex(5); 
       }
     }, 5000)
@@ -51,11 +51,11 @@ const HomePage = () => {
 
   const iconClicked = (x: number) => {
     if (x === 1){
-      setActiveImg("/image/hero1.jpg");
+      setActiveImg("/images/hero1.jpg");
       setActiveIndex(1);
     }
     if (x === 2){
-      setActiveImg("/image/hero3.jpg");
+      setActiveImg("/images/hero3.jpg");
       setActiveIndex(2);
     }
     if (x === 3){
@@ -63,11 +63,11 @@ const HomePage = () => {
       setActiveIndex(3);
     }
     if (x === 4){
-      setActiveImg("/image/hero4.jpg");
+      setActiveImg("/images/hero4.jpg");
       setActiveIndex(4);
     }
     if (x === 5){
-      setActiveImg("/image/hero6.jpg");
+      setActiveImg("/images/hero6.jpg");
       setActiveIndex(5); 
     }
   }
