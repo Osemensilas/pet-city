@@ -8,6 +8,8 @@ type Props = {
 };
 
 const ProductCard: React.FC<Props> = ( {product} ) => {
+  
+  const router = useRouter();
     
     const viewProduct = (x: string) => {
         router.push(`/product?id=${x}`);
