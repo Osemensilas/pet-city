@@ -35,6 +35,7 @@ const Page = () => {
 
         if (formData.password !== formData.confirmPassword){
             setError("Passwords do not match!");
+            return;
         }
 
         if (!emailValid.test(formData.email)){
