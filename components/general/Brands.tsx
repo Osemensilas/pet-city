@@ -4,61 +4,14 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import { Brand, brands } from "@/data/Brands";
 
 const Brands = () => {
     
-    type brand = {
-        id: number,
-        name: string,
-        image: string,
-    }
+    const allBrands: Brand[] = [...brands];
     
     const pathName = usePathname();
     
-    const [brands, setBrands] = useState<brand[]>([]);
-    
-    const ourBrands = [
-        {
-            id: 1,
-            name: "nulo",
-            image: "nulo1.png",
-        },
-        {
-            id: 2,
-            name: "Purina",
-            image: "brand1.jpg"
-        },
-        {
-            id: 3,
-            name: "Purina",
-            image: "brand1.jpg"
-        },
-        {
-             id: 4,
-             name: "Purina",
-             image: "brand1.jpg"
-         },
-        {
-             id: 5,
-             name: "Purina",
-             image: "brand1.jpg"
-         },
-        {
-             id: 6,
-             name: "Purina",
-             image: "brand1.jpg"
-         },
-        {
-             id: 7,
-             name: "Purina",
-             image: "brand1.jpg"
-         },
-        {
-             id: 8,
-             name: "Purina",
-             image: "brand1.jpg"
-         },
-    ];
     return ( 
         <>
         <section className="h-max w-screen px-4 sm:px-10 py-10">
@@ -69,7 +22,7 @@ const Brands = () => {
             </div>
             <div className="h-max w-full brands-container gap-3 justify-between">
                 {
-                    ourBrands.map((brand, index) => (
+                    allBrands.map((brand, index) => (
                 <Link href={`/shop-by-brand?brand=${brand.name}`} key={index} className="h-max w-max flex">
                     <div className="relative h-[100px] w-[120px]">
                         <Image src={`${brand.image}`} alt="best seller 1" fill />
