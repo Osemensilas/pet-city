@@ -6,7 +6,7 @@ const Page = () => {
     <section className="h-[40vh] w-full flex justify-center items-center">
       <h1>Contact Us</h1>
     </section>
-    <section className="h-max w-max flex flex-col sm:flex-row py-10 px-4 sm:px-10">
+    <section className="h-max w-screen flex flex-col sm:flex-row py-10 px-4 sm:px-10">
       <div className="h-max w-full sm:w-1/2">
         <h2 className="text-3xl font-bold text-header">Contact Information</h2>
         <p className="text-base text-text">PetCity Limited</p>
