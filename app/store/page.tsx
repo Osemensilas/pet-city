@@ -3,97 +3,16 @@
 import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/navigation";
+import { Product, products } from "@/data/Products";
+import ProductCard from "../ui/ProductCard";
 
 const Page = () => {
-
-  type Product = {
-    id: number;
-    productId: string;
-    name: string;
-    price: number;
-    stock: string;
-    image: string;
-  };
   
   const router = useRouter();
 
-  const [products, setProducts] = useState<Product[]>([]);
   const [showFilter, setShowFilter] = useState(false);
-
-  const ourProducts = [
-      {
-          id: 1,
-          productId: "prodb73738",
-          name: "Nulo",
-          price: 5000,
-          stock: "In stock",
-          image: "/nulo_cat_feed1.png",
-          age: "adult",
-      },
-      {
-          id: 2,
-          productId: "prodb7m738",
-          name: "Nulo",
-          price: 7500,
-          stock: "In stock",
-          image: "/nulo_cat_feed2.png",
-          age: "adult",
-      },
-      {
-          id: 3,
-          productId: "prodb73v38",
-          name: "Nulo",
-          price: 5000,
-          stock: "In stock",
-          image: "/nulo_cat_feed3.png",
-          age: "adult",
-      },
-      {
-          id: 4,
-          productId: "prodb73732",
-          name: "Nulo",
-          price: 7500,
-          stock: "In stock",
-          image: "/nulo1.png",
-          age: "adult",
-      },
-      {
-          id: 5,
-          productId: "prodbi3738",
-          name: "Royal Canis",
-          price: 5000,
-          stock: "In stock",
-          image: "/royal_canis_dog1.png",
-          age: "adult",
-      },
-      {
-          id: 6,
-          productId: "prodb73708",
-          name: "Royal Canis",
-          price: 7500,
-          stock: "In stock",
-          image: "/royal_canis_dog2.png",
-          age: "adult",
-      },
-      {
-          id: 7,
-          productId: "prodb73g38",
-          name: "Royal Canis",
-          price: 5000,
-          stock: "In stock",
-          image: "/royal_canis_dog3.png",
-          age: "adult",
-      },
-      {
-          id: 8,
-          productId: "prodb7373u",
-          name: "Royal Canis",
-          price: 7500,
-          stock: "In stock",
-          image: "/royal_canis_dog4.png",
-          age: "adult",
-      }
-  ];
+  
+  const products: Product[] = [... products];
   
   const filterClicked = (e: React.MouseEvent<HTMLButtonElement>) => {
     if (!showFilter){
@@ -223,23 +142,8 @@ const Page = () => {
                     <p>No products available</p>
                   </div>
                 ) : (
-                  ourProducts.map((product, index) => (
-                    <div key={index} className="h-max w-max bg-accent rounded p-3">
-                      <div className="relative h-[100px] sm:h-[150px] w-[120px] sm:w-[180px]">
-                          <Image src={`${product.image}`} alt="best seller 1" fill />
-                      </div>
-                      <div className="w-[120px] sm:w-[180px] h-[100px] mt-2 pb-2">
-                          <div className="h-max w-full flex items-center justify-between">
-                              <h3 className="text-base font-semibold">{product.name}</h3>
-                              <p>{product.stock}</p>
-                          </div>
-                          <h3 className="text-base font-semibold">Science Diet</h3>
-                          <div className="w-full h-max pt-2 flex items-center justify-between">
-                              <span className="text-text text-base font-bold">₦{(product.price).toLocaleString()}</span>
-                              <button onClick={() => viewProduct(product.productId)} type="button" className="text-sm border-primary border text-primary px-3 py-1 rounded hover:bg-primary hover:text-background transition-colors duration-300 ml-5 text-sm"><i className="fa fa-arrow-right"></i> <span> Add</span></button>
-                          </div>
-                      </div>
-                    </div>
+                  products.map((product, index) => (
+                  <ProductCard key={index} product={product} />
                   ))
                 )
               }
