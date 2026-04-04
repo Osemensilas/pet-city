@@ -18,7 +18,7 @@ export const products: Product[] = [
         stock: "In stock",
         image: "/nulo_cat_feed1.png",
         age: "adult",
-        sold: 10,
+        sold: 19,
       },
       {
         id: 2,
@@ -28,7 +28,7 @@ export const products: Product[] = [
         stock: "In stock",
         image: "/nulo_cat_feed2.png",
         age: "adult",
-        sold: 11,
+        sold: 61,
       },
       {
         id: 3,
@@ -48,7 +48,7 @@ export const products: Product[] = [
         stock: "In stock",
         image: "/nulo1.png",
         age: "adult",
-        sold: 70,
+        sold: 0,
       },
       {
         id: 5,
