@@ -4,7 +4,7 @@
     image: string,
   }
   
-  export const brands: brand[] = [
+  export const brands: Brand[] = [
         {
             id: 1,
             name: "nulo",
