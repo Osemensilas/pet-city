@@ -119,7 +119,7 @@ const Page = () => {
                         Already have an account? <a href="/login" className="text-primary hover:underline">Login</a>
                     </div>
                     <div className="h-max w-full py-5 mt-5 border-t border-grey">
-                        <button onClick={btnClicked} className="w-full rounded bg-primary py-2 text-center text-background outline-none" type="submit">{loading ? <Loading /> : "Register"}</button>
+                        <button onClick={btnClicked} className="w-full rounded bg-primary py-2 text-center text-background outline-none flex items-center justify-center" type="submit">{loading ? <Loading /> : "Register"}</button>
                     </div>
                 </form>
             </div>
