@@ -19,6 +19,10 @@ const Header = () => {
             setShowNav(true);
         }
     }
+    
+    const navClicked = () => {
+        setShowNav(false);
+    }
 
     return ( 
         <>
@@ -58,7 +62,7 @@ const Header = () => {
                     <li className={`text-header text-base font-medium hover:text-primary transition-colors duration-300 group
                     ${currentPath === "/" ? "text-primary" : ""}
                         `}>
-                        <Link href="/" className="">Home</Link>
+                        <Link href="/" onClick={navClicked} className="">Home</Link>
                         <div className={`h-[2px] w-full mt-[1px] group-hover:bg-primary transition-colors duration-300
                             ${currentPath === "/" ? "bg-primary" : ""}
                             `}></div>
@@ -66,7 +70,7 @@ const Header = () => {
                     <li className={`text-header text-base font-medium hover:text-primary transition-colors duration-300 group
                         ${currentPath === "/shop-by-pet" ? "text-primary" : ""}
                         `}>
-                        <Link href="/shop-by-pet" className="">Shop by Pet</Link>
+                        <Link href="/shop-by-pet" onClick={navClicked} className="">Shop by Pet</Link>
                         <div className={`h-[2px] w-full mt-[1px] group-hover:bg-primary transition-colors duration-300
                             ${currentPath === "/shop-by-pet" ? "bg-primary" : ""}
                             `}></div>
@@ -74,7 +78,7 @@ const Header = () => {
                     <li className={`text-header text-base font-medium hover:text-primary transition-colors duration-300 group
                         ${currentPath === "/shop-by-brand" ? "text-primary" : ""}
                         `}>
-                        <Link href="/shop-by-brand" className="">Shop by Brand</Link>
+                        <Link href="/shop-by-brand" onClick={navClicked} className="">Shop by Brand</Link>
                         <div className={`h-[2px] w-full mt-[1px] group-hover:bg-primary transition-colors duration-300
                             ${currentPath === "/shop-by-brand" ? "bg-primary" : ""}
                             `}></div>
@@ -82,7 +86,7 @@ const Header = () => {
                     <li className={`text-header text-base font-medium hover:text-primary transition-colors duration-300 group
                         ${currentPath === "/pharmacy" ? "text-primary" : ""}
                         `}>
-                        <Link href="/pharmacy" className="">Pharmacy</Link>
+                        <Link href="/pharmacy" onClick={navClicked} className="">Pharmacy</Link>
                         <div className={`h-[2px] w-full mt-[1px] group-hover:bg-primary transition-colors duration-300
                             ${currentPath === "/pharmacy" ? "bg-primary" : ""}
                             `}></div>
@@ -90,13 +94,13 @@ const Header = () => {
                     <li className={`text-header text-base font-medium hover:text-primary transition-colors duration-300 group
                         ${currentPath === "/contact-us" ? "text-primary" : ""}
                         `}>
-                        <Link href="/contact-us" className="">Contact Us</Link>
+                        <Link href="/contact-us" onClick={navClicked} className="">Contact Us</Link>
                         <div className={`h-[2px] w-full mt-[1px] group-hover:bg-primary transition-colors duration-300
                             ${currentPath === "/contact-us" ? "bg-primary" : ""}
                             `}></div>
                     </li>
                 </ul>
-                <Link href="/cart" className="">
+                <Link href="/cart" onClick={navClicked} className="">
                     <i className="fa fa-shopping-cart text-xl"></i>
                     <span className="ml-2 bg-primary text-background px-2 py-1 rounded">4 items</span>
                 </Link>
