@@ -1,3 +1,6 @@
+'use client';
+
+import { useRouter } from "next/navigation";
 import { Product } from "@/data/Products";
 
 type Props = {
