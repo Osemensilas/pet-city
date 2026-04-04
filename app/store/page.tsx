@@ -12,7 +12,7 @@ const Page = () => {
 
   const [showFilter, setShowFilter] = useState(false);
   
-  const products: Product[] = [... products];
+  const allProducts: Product[] = [... products];
   
   const filterClicked = (e: React.MouseEvent<HTMLButtonElement>) => {
     if (!showFilter){
@@ -137,12 +137,12 @@ const Page = () => {
           <div className="h-max w-full bg-accent rounded p-4 sm:p-3">
             <div className="h-max w-full flex items-center flex-wrap gap-3 mb-5">
               {
-                ourProducts.length < 1 ? (
+                allProducts.length < 1 ? (
                   <div className="h-screen w-full flex items-center justify-center">
                     <p>No products available</p>
                   </div>
                 ) : (
-                  products.map((product, index) => (
+                  allProducts.map((product, index) => (
                   <ProductCard key={index} product={product} />
                   ))
                 )
