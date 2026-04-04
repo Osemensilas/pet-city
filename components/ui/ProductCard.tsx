@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { Product } from "@/data/Products";
+import Image from "next/image";
 
 type Props = {
   product: Product;
