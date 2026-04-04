@@ -11,6 +11,8 @@ const Brands = () => {
     const allBrands: Brand[] = [...brands];
     
     const pathName = usePathname();
+
+    const displayBrands = pathName === "/" ? allBrands.slice(0, 4) : allBrands;
     
     return ( 
         <>
@@ -20,12 +22,12 @@ const Brands = () => {
                 ${pathName === "/" ? "" : "hidden"}
                 `}>Shop by Brand</h2>
             </div>
-            <div className="h-max w-full brands-container gap-3 justify-between">
+            <div className="h-max w-full brands-container gap-y-10 gap-x-4 justify-between">
                 {
-                    allBrands.map((brand, index) => (
+                    displayBrands.map((brand, index) => (
                 <Link href={`/store?brand=${brand.name.toLowerCase()}`} key={index} className="h-max w-max flex">
-                    <div className="relative h-[100px] w-[120px]">
-                        <Image src={`images/${brand.image}`} alt={brand.name} fill />
+                    <div className="relative h-[100px] sm:h-[150px] w-[120px] sm:w-[180px]">
+                        <Image src={`/images/${brand.image}`} alt={brand.name} fill />
                     </div>
                 </Link>
                     ))

@@ -47,7 +47,7 @@ const BestSeller = () => {
                         <i className="fa-solid fa-chevron-right text-2xl"></i>
                     </button>
                 </div>
-                <div className="h-max w-full overflow-x-scroll">
+                <div className="h-max w-full overflow-x-scroll py-5">
                     <div ref={cardRef} className="w-max h-max flex items-center gap-5">
                         {
                             bestSellers.map((product, index) => (

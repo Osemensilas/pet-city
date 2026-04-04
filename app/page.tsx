@@ -7,6 +7,7 @@ import Link from "next/link";
 import Brands from "@/components/general/Brands";
 import Faqs from '@/components/general/Faqs';
 import { useRouter } from "next/navigation";
+import Team from "@/components/general/Team";
 
 const HomePage = () => {
   
@@ -59,7 +60,7 @@ const HomePage = () => {
       setActiveIndex(2);
     }
     if (x === 3){
-      setActiveImg("/image/hero10.jpg");
+      setActiveImg("/images/hero10.jpg");
       setActiveIndex(3);
     }
     if (x === 4){
@@ -124,7 +125,7 @@ const HomePage = () => {
       </div>
     </section>
     <section className="h-max w-full px-4 sm:px-10 py-10">
-      <div className="h-[400px] sm:h-[650px] w-full flex rounded bg-accent">
+      <div className="h-[400px] sm:h-[450px] w-full flex rounded bg-accent">
         <div className="relative w-1/2 h-full hidden sm:block">
           <Image src={"/pet-doc.jpg"} fill alt="pharmacy image" className="rounded-tl rounded-bl" />
         </div>
@@ -132,14 +133,15 @@ const HomePage = () => {
             <h2 className="text-3xl font-semibold">Health Matters</h2>
             <p className="">Take care of your pet health with our medication and keep them healthy to ensure a long, happy, and active life.</p>
             <div className="">
-              <button type="button" className="bg-primary text-background px-5 py-2 rounded hover:bg-primary-dark transition-colors duration-300" title="pharmacy button">Shop Now</button>
+              <button type="button" onClick={() => router.push("/store?category=health")} className="bg-primary text-background px-5 py-2 rounded hover:bg-primary-dark transition-colors duration-300" title="pharmacy button">Shop Now</button>
             </div>
         </div>
       </div>
     </section>
     <Brands />
+    <Team />
     <section className="h-max w-full px-4 sm:px-10 py-10">
-      <div className="h-[400px] sm:h-[650px] w-full flex rounded bg-accent">
+      <div className="h-[400px] sm:h-[450px] w-full flex rounded bg-accent">
         <div className="w-full sm:w-1/2 h-full flex justify-center flex-col gap-10 sm:px-10 px-4">
           <h2 className="text-3xl font-semibold">Newsletter</h2>
           <p className="">Want to get discount, special offer to to make your pet happy? Join our newsletter!</p>

@@ -130,7 +130,7 @@ const Page = () => {
         <div className="h-max w-fill sm:w-[80%] flex flex-col gap-3">
           <div className="h-max w-full bg-accent rounded p-3 flex justify-between sm:justify-center items-center">
             <h2 className="text-center text-3xl font-bold">Products for Cats</h2>
-            <button onClick={filterClicked} className="h-max w-max block sm:hidden">
+            <button onClick={filterClicked} title="button" className="h-max w-max block sm:hidden">
               <i className="fa-solid fa-filter"></i>
             </button>
           </div>
@@ -150,7 +150,7 @@ const Page = () => {
             </div>
             <div className="h-max w-full mt-20">
               <div className="h-max w-full flex gap-3 items-center justify-center">
-                <button type="button" className="p-2 bg-primary text-background rounded">
+                <button type="button" title="button" className="p-2 bg-primary text-background rounded">
                   <i className="fa-solid fa-chevron-left text-background text-2xl"></i>
 
                 </button>
@@ -163,7 +163,7 @@ const Page = () => {
                   <li className="border h-10 w-10 items-center justify-center border-primary text-primary rounded-full hidden sm:flex">9</li>
                   <li className="border h-10 w-10 flex items-center justify-center border-primary text-primary rounded-full">10</li>
                 </ul>
-                <button type="button" className="p-2 bg-primary text-background rounded">
+                <button type="button" title="buttton" className="p-2 bg-primary text-background rounded">
                   <i className="fa-solid fa-chevron-right text-background text-2xl"></i>
                 </button>
               </div>
