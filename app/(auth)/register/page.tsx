@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Loading from "@/components/ui/Loading";
 
 const Page = () => {
 
@@ -12,6 +13,7 @@ const Page = () => {
     };
 
     const [error, setError] = useState("");
+    const [loading, setLoading] = useState(false);
     const [formData, setFormData] = useState({
         fullname: "",
         email: "",
@@ -26,20 +28,25 @@ const Page = () => {
 
     const btnClicked = () => {
 
+        setLoading(true);
+
         let emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
         if (!formData.fullname || !formData.email || !formData.password || !formData.confirmPassword){
             setError("All fields required");
+            setLoading(false);
             return;
         }
 
         if (formData.password !== formData.confirmPassword){
             setError("Passwords do not match!");
+            setLoading(false);
             return;
         }
 
         if (!emailValid.test(formData.email)){
             setError("Invalid email address!");
+            setLoading(false);
             return;
         }
 
@@ -55,6 +62,7 @@ const Page = () => {
             const userExists = existingUsers.some(user => user.email === newUser.email);
             if (userExists) {
                 setError("User already exists");
+                setLoading(false);
                 return;
             }
 
@@ -70,6 +78,7 @@ const Page = () => {
             });
 
             setError("");
+            setLoading(false);
         } catch (error) {
             console.log("Error registering user: ", error);
              setError("An error occurred while registering. Please try again.");
@@ -110,7 +119,7 @@ const Page = () => {
                         Already have an account? <a href="/login" className="text-primary hover:underline">Login</a>
                     </div>
                     <div className="h-max w-full py-5 mt-5 border-t border-grey">
-                        <button onClick={btnClicked} className="w-full rounded bg-primary py-2 text-center text-background outline-none" type="submit">Register</button>
+                        <button onClick={btnClicked} className="w-full rounded bg-primary py-2 text-center text-background outline-none" type="submit">{loading ? <Loading /> : "Register"}</button>
                     </div>
                 </form>
             </div>
