@@ -17,7 +17,7 @@
         },
         {
             id: 3,
-            name: "Purina",
+            name: "American Journey",
             image: "brand1.jpg"
         },
         {
