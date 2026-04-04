@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { Product, products } from "@/data/Products";
-import ProductCard from "../ui/ProductCard";
+import ProductCard from "@/ui/ProductCard";
 
 const Page = () => {
   
