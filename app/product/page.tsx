@@ -1,5 +1,6 @@
 'use client';
 
+import { Suspense } from "react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useSearchParams } from 'next/navigation';
@@ -75,61 +76,63 @@ const Page = () => {
 
   return(
     <>
-      <section className="h-max w-screen px-4 sm:px-10 py-10">
-        <form onSubmit={(e) => e.preventDefault()} className="h-max w-full flex flex-col sm:flex-row items-start gap-3">
-          <div className="h-max sm:w-[65%] w-full bg-accent rounded p-4 sm:p-10">
-            <div className="h-max w-full flex justify-center items-center">
-              <div className="relative h-[250px] sm:h-[350px] w-full sm:w-[450px]">
-                <Image src={activeImage} fill className="object-fit" alt="products image" />
+      <Suspense fallback={<p>Loading...</p>}>
+        <section className="h-max w-screen px-4 sm:px-10 py-10">
+          <form onSubmit={(e) => e.preventDefault()} className="h-max w-full flex flex-col sm:flex-row items-start gap-3">
+            <div className="h-max sm:w-[65%] w-full bg-accent rounded p-4 sm:p-10">
+              <div className="h-max w-full flex justify-center items-center">
+                <div className="relative h-[250px] sm:h-[350px] w-full sm:w-[450px]">
+                  <Image src={activeImage} fill className="object-fit" alt="products image" />
+                </div>
+              </div>
+              <div className="h-max w-full flex justify-center items-center gap-4 mt-10">
+                <div onClick={() => imageClicked(1)} className={`h-[80px] w-[80px] border-2 rounded relative
+                  ${activeImage === image1 ? "border-primary" : "border-grey cursor-pointer"}
+                  `}>
+                  <Image src={image1} fill className="object-fit" alt="product image" />
+                </div>
+                <div onClick={() => imageClicked(2)} className={`h-[80px] w-[80px] border-2 rounded relative
+                  ${activeImage === image2 ? "border-primary" : "border-grey cursor-pointer"}
+                  `}>
+                  <Image src={image2} fill className="object-fit" alt="product image" />
+                </div>
               </div>
             </div>
-            <div className="h-max w-full flex justify-center items-center gap-4 mt-10">
-              <div onClick={() => imageClicked(1)} className={`h-[80px] w-[80px] border-2 rounded relative
-                ${activeImage === image1 ? "border-primary" : "border-grey cursor-pointer"}
-                `}>
-                <Image src={image1} fill className="object-fit" alt="product image" />
+            <div className="h-max sm:w-[35%] w-full bg-accent rounded p-4 sm:p-10">
+              <p className={`px-4 py-1 text-sm text-background rounded w-max
+                ${product?.stock && product.stock > 0 ? "bg-green-500" : "bg-danger"}
+                `}>{product?.stock && product.stock > 0 ? "In Stock" : "Out of Stock"}</p>
+              <h1 className="text-3xl text-header mt-4 font-bold">{product?.name}</h1>
+              <p className="text-text text-base mt-4">{product?.component || "Component not available"}</p>
+              <p className="text-text text-base mt-4">Items Left: {product?.stock || 0}</p>
+              <h2 className="text-2xl font-semibold text-text">₦{(product?.price || 0).toLocaleString()}</h2>
+              <div className="h-max w-full flex items-center gap-3 mt-4">
+                <button type="button" onClick={reduceQty} className="h-10 w-10 rounded bg-primary flex items-center justify-center text-background text-base">
+                  <p>-</p>
+                </button>
+                <input className="h-10 w-20 border grey rounded px-5" value="1" title="product quantity" />
+                <button type="button" onClick={increaseQty} className="h-10 w-10 rounded bg-primary flex items-center justify-center text-background text-base">
+                  <p>+</p>
+                </button>
               </div>
-              <div onClick={() => imageClicked(2)} className={`h-[80px] w-[80px] border-2 rounded relative
-                ${activeImage === image2 ? "border-primary" : "border-grey cursor-pointer"}
-                `}>
-                <Image src={image2} fill className="object-fit" alt="product image" />
+              <div className="h-max w-full mt-4">
+                <button type="button" onClick={addToCart} className="h-max w-full py-2 text-center bg-primary text-background text-base rounded">Add to Cart</button>
+              </div>
+            </div>
+          </form>
+          <div className="h-max w-full mt-10">
+            <div className="bg-accent rounded h-max w-full p-4 sm:p-10">
+              <div className="h-max w-full mb-4 sm:mb-10">
+                <h3 className="text-2xl font-semibold">Description:</h3>
+              </div>
+              <div className="h-max w-full">
+                <p className="text-base text-text">{product?.description || "Description not available"}</p>
               </div>
             </div>
           </div>
-          <div className="h-max sm:w-[35%] w-full bg-accent rounded p-4 sm:p-10">
-            <p className={`px-4 py-1 text-sm text-background rounded w-max
-              ${product?.stock && product.stock > 0 ? "bg-green-500" : "bg-danger"}
-              `}>{product?.stock && product.stock > 0 ? "In Stock" : "Out of Stock"}</p>
-            <h1 className="text-3xl text-header mt-4 font-bold">{product?.name}</h1>
-            <p className="text-text text-base mt-4">{product?.component || "Component not available"}</p>
-            <p className="text-text text-base mt-4">Items Left: {product?.stock || 0}</p>
-            <h2 className="text-2xl font-semibold text-text">₦{(product?.price || 0).toLocaleString()}</h2>
-            <div className="h-max w-full flex items-center gap-3 mt-4">
-              <button type="button" onClick={reduceQty} className="h-10 w-10 rounded bg-primary flex items-center justify-center text-background text-base">
-                <p>-</p>
-              </button>
-              <input className="h-10 w-20 border grey rounded px-5" value="1" title="product quantity" />
-              <button type="button" onClick={increaseQty} className="h-10 w-10 rounded bg-primary flex items-center justify-center text-background text-base">
-                <p>+</p>
-              </button>
-            </div>
-            <div className="h-max w-full mt-4">
-              <button type="button" onClick={addToCart} className="h-max w-full py-2 text-center bg-primary text-background text-base rounded">Add to Cart</button>
-            </div>
-          </div>
-        </form>
-        <div className="h-max w-full mt-10">
-          <div className="bg-accent rounded h-max w-full p-4 sm:p-10">
-            <div className="h-max w-full mb-4 sm:mb-10">
-              <h3 className="text-2xl font-semibold">Description:</h3>
-            </div>
-            <div className="h-max w-full">
-              <p className="text-base text-text">{product?.description || "Description not available"}</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <SimilarProducts productId={product?.productId} />
+        </section>
+        <SimilarProducts productId={product?.productId} />
+      </Suspense>
     </>
   );
 }
