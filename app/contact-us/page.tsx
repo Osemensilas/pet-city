@@ -3,11 +3,11 @@
 const Page = () => {
   return(
     <>
-    <section className="h-[40vh] w-full flex justify-center items-center">
-      <h1>Contact Us</h1>
+    <section className="h-[150px] bg-header sm:h-[40vh] w-full flex justify-center items-center">
+      <h1 className="text-3xl font-bold text-background">Contact Us</h1>
     </section>
     <section className="h-max w-screen flex flex-col sm:flex-row py-10 px-4 sm:px-10">
-      <div className="h-max w-full sm:w-1/2">
+      <div className="h-max w-full sm:w-1/2 mb-10 sm:mb-0">
         <h2 className="text-3xl font-bold text-header">Contact Information</h2>
         <p className="text-base text-text">PetCity Limited</p>
         <p className="text-base text-text">shop 15, block 4, FO1 market, Kubwa, Abuja</p>
@@ -39,10 +39,10 @@ const Page = () => {
           <h2 className="text-3xl font-bold mb-10 text-center">Get in Touch</h2>
           <p className="text-base mb-5">We would love to hear from you. please, fill out the form and out team will get back to you as soon as possible.</p>
           <div className="h-max w-full">
-            <div className="h-max w-full">
+            <div className="h-max w-full mb-5">
               <input type="text" className="text-base px-5 h-10 w-full border rounded outline-none border-grey" name="fullname" placeholder="Fullname" />
             </div>
-            <div className="h-max w-full">
+            <div className="h-max w-full mb-5">
               <input type="text" className="text-base px-5 h-10 w-full border rounded outline-none border-grey" name="email" placeholder="Email Address" />
             </div>
             <div className="h-max w-full">
