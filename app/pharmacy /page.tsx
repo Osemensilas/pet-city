@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import PageHero from "@/components/general/PageHero";
 
 const Page = () => {
   
@@ -10,6 +11,7 @@ const Page = () => {
   
   return(
     <>
+    <PageHero />
     <section className="h-screen w-screen flex items-center justify-start px-4 sm:px-10 relative">
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="relative h-full w-full">

@@ -1,13 +1,11 @@
-import Brands from "@/components/general/Brands";
 import PageHero from "@/components/general/PageHero";
 
 const Page = () => {
   return(
     <>
     <PageHero />
-    <Brands />
     </>
-  )
+  );
 }
 
 export default Page;
