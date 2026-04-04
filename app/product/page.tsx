@@ -69,10 +69,14 @@ const Page = () => {
     }
   }
 
+  const addToCart = () => {
+    alert("Added to cart!");
+  }
+
   return(
     <>
       <section className="h-max w-screen px-4 sm:px-10 py-10">
-        <div className="h-max w-full flex flex-col sm:flex-row items-start gap-3">
+        <form onSubmit={(e) => e.preventDefault()} className="h-max w-full flex flex-col sm:flex-row items-start gap-3">
           <div className="h-max sm:w-[65%] w-full bg-accent rounded p-4 sm:p-10">
             <div className="h-max w-full flex justify-center items-center">
               <div className="relative h-[250px] sm:h-[350px] w-full sm:w-[450px]">
@@ -110,10 +114,10 @@ const Page = () => {
               </button>
             </div>
             <div className="h-max w-full mt-4">
-              <button className="h-max w-full py-2 text-center bg-primary text-background text-base rounded">Add to Cart</button>
+              <button type="button" onClick={addToCart} className="h-max w-full py-2 text-center bg-primary text-background text-base rounded">Add to Cart</button>
             </div>
           </div>
-        </div>
+        </form>
         <div className="h-max w-full mt-10">
           <div className="bg-accent rounded h-max w-full p-4 sm:p-10">
             <div className="h-max w-full mb-4 sm:mb-10">
