@@ -52,7 +52,7 @@ const Header = () => {
                         <i className="fa fa-search text-grey"></i>
                     </button>
                 </form>
-                <div className="h-max w-max sm:block">
+                <div className="h-max w-max sm:block hidden">
                     <div className={`${activeUser ? "hidden" : "block text-base text-primary py-1 px-4 border border-primary rounded cursor-pointer"}`}>
                         <Link href="/login">Login</Link>
                     </div>
