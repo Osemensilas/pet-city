@@ -82,9 +82,9 @@ const Header = () => {
                     <li className={`text-header text-base font-medium hover:text-primary transition-colors duration-300 group
                         ${currentPath === "/pharmarcy" ? "text-primary" : ""}
                         `}>
-                        <Link href="/pharmarcy" className="">Pharmarcy</Link>
+                        <Link href="/pharmacy" className="">Pharmarcy</Link>
                         <div className={`h-[2px] w-full mt-[1px] group-hover:bg-primary transition-colors duration-300
-                            ${currentPath === "/pharmarcy" ? "bg-primary" : ""}
+                            ${currentPath === "/pharmacy" ? "bg-primary" : ""}
                             `}></div>
                     </li>
                     <li className={`text-header text-base font-medium hover:text-primary transition-colors duration-300 group
