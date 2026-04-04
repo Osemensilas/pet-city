@@ -23,7 +23,7 @@
         {
              id: 4,
              name: "Hills",
-             image: "brand1.jpg"
+             image: "hills-brand.jpg"
          },
         {
              id: 5,
