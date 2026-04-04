@@ -23,9 +23,9 @@ const Brands = () => {
             <div className="h-max w-full brands-container gap-3 justify-between">
                 {
                     allBrands.map((brand, index) => (
-                <Link href={`/store?brand=${brand.name}`} key={index} className="h-max w-max flex">
+                <Link href={`/store?brand=${(brand.name).toLower()}`} key={index} className="h-max w-max flex">
                     <div className="relative h-[100px] w-[120px]">
-                        <Image src={`${brand.image}`} alt="best seller 1" fill />
+                        <Image src={`images/${brand.image}`} alt={brand.name} fill />
                     </div>
                 </Link>
                     ))

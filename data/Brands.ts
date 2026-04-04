@@ -8,41 +8,41 @@
         {
             id: 1,
             name: "nulo",
-            image: "nulo1.png",
+            image: "nulo-brand.png",
         },
         {
             id: 2,
             name: "Purina",
-            image: "brand1.jpg"
+            image: "purina-brand.jpg"
         },
         {
             id: 3,
             name: "American Journey",
-            image: "brand1.jpg"
+            image: "american-journey-brand.jpg"
         },
         {
              id: 4,
-             name: "Purina",
+             name: "Hills",
              image: "brand1.jpg"
          },
         {
              id: 5,
-             name: "Purina",
+             name: "Sheba",
              image: "brand1.jpg"
          },
         {
              id: 6,
-             name: "Purina",
+             name: "Drool",
              image: "brand1.jpg"
          },
         {
              id: 7,
-             name: "Purina",
+             name: "Acana",
              image: "brand1.jpg"
          },
         {
              id: 8,
-             name: "Purina",
+             name: "Origin",
              image: "brand1.jpg"
          },
   ];
