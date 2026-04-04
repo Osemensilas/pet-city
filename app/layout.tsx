@@ -17,16 +17,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-max w-screen">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-pap2kZ7YHQyF..."
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
+        />
+      </head>
       <body>
-        <head>
-          <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-            integrity="sha512-pap2kZ7YHQyF..."
-            crossOrigin="anonymous"
-            referrerPolicy="no-referrer"
-          />
-        </head>
         <Header />
         {children}
         <Footer />

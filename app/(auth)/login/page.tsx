@@ -28,6 +28,9 @@ const Page = () => {
                     <div className="h-max w-full py-5 mt-5 border-t border-grey">
                         <button className="w-full rounded bg-primary py-2 text-center text-background" type="submit">Login</button>
                     </div>
+                    <div className="h-max w-full my-3">
+                        <a href="/forget-password" className="text-primary hover:underline">Forgot Password?</a>
+                    </div>
                 </form>
             </div>
         </section>

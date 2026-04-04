@@ -28,6 +28,8 @@ const Header = () => {
         <>
         <header className={`h-[100px] w-screen px-4 sm:px-10
             ${currentPath === "/login" ? "hidden" : ""}
+            ${currentPath === "/register" ? "hidden" : ""}
+            ${currentPath === "/forget-password" ? "hidden" : ""}
             `}>
             <div className="h-full sm:h-[50%] w-full flex items-center justify-between">
                 <div className="h-max w-max cursor-pointer" onClick={() => router.push("/")}>

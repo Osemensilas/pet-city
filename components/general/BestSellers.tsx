@@ -36,7 +36,7 @@ const BestSeller = () => {
         <section className="h-max w-screen px-4 sm:px-10 py-10">
             <div className="h-max w-full flex items-center justify-between mb-5">
                 <h2 className="text-2xl font-bold text-header mb-5">Best Sellers</h2>
-                <Link href="/all-best-sellers" className="text-primary text-base font-medium hover:underline">View All</Link>
+                <Link href="/store?category=best-sellers" className="text-primary text-base font-medium hover:underline">View All</Link>
             </div>
             <div className="h-max w-full relative">
                 <div className="h-[1px] w-full items-center justify-between absolute top-1/2 left-0 sm:flex hidden">

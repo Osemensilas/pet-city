@@ -5,10 +5,12 @@ export type Product = {
     price: number;
     stock: number;
     image: string;
+    image2: string;
     age: string;
     sold: number;
     component: string;
     pet: string;
+    description: string;
 };
 
 export const products: Product[] = [
@@ -19,10 +21,12 @@ export const products: Product[] = [
         price: 5000,
         stock: 57,
         image: "/uploads/cat4.jpg",
+        image2: "",
         age: "adult",
         sold: 19,
         component: "science diet",
-        pet: "cat"
+        pet: "cat",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
       {
         id: 2,
@@ -31,10 +35,12 @@ export const products: Product[] = [
         price: 7500,
         stock: 78,
         image: "/uploads/cat19.jpg",
+        image2: "",
         age: "adult",
         sold: 61,
         component: "Grain-free | Salmone Recipe",
-        pet: "cat"
+        pet: "cat",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
       {
         id: 3,
@@ -43,10 +49,12 @@ export const products: Product[] = [
         price: 5000,
         stock: 17,
         image: "/uploads/cat27.jpg",
+        image2: "",
         age: "adult",
         sold: 13,
         component: "Ocean fish",
-        pet: "cat"
+        pet: "cat",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
       {
         id: 4,
@@ -55,10 +63,12 @@ export const products: Product[] = [
         price: 7500,
         stock: 81,
         image: "/uploads/cat41.jpg",
+        image2: "",
         age: "adult",
         sold: 0,
         component: "Sensitive Skin & Stomach",
-        pet: "cat"
+        pet: "cat",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
       {
         id: 5,
@@ -67,10 +77,12 @@ export const products: Product[] = [
         price: 5000,
         stock: 27,
         image: "/uploads/cat66.jpg",
+        image2: "",
         age: "adult",
         sold: 64,
         component: "Chicken Flavour",
-        pet: "cat"
+        pet: "cat",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
       {
         id: 6,
@@ -79,10 +91,12 @@ export const products: Product[] = [
         price: 7500,
         stock: 63,
         image: "/uploads/cat107.jpg",
+        image2: "",
         age: "adult",
         sold: 140,
         component: "Science Diet",
-        pet: "cat"
+        pet: "cat",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
       {
         id: 7,
@@ -91,10 +105,12 @@ export const products: Product[] = [
         price: 5000,
         stock: 34,
         image: "/uploads/cat113.jfif",
+        image2: "",
         age: "adult",
         sold: 100,
         component: "Science Diet",
-        pet: "cat"
+        pet: "cat",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
       {
         id: 8,
@@ -103,261 +119,305 @@ export const products: Product[] = [
         price: 7500,
         stock: 5,
         image: "/uploads/cat139.webp",
+        image2: "",
         age: "adult & kitten",
         sold: 17,
         component: "Grain-free",
-        pet: "cat"
+        pet: "cat",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
       {
         id: 9,
-        productId: "prodb7373u",
+        productId: "prodb73fk3",
         name: "American Journey",
         price: 7500,
         stock: 5,
         image: "/uploads/cat177.jfif",
+        image2: "",
         age: "Kitten",
         sold: 17,
         component: "Grain-free |Chicken Recipe",
-        pet: "cat"
+        pet: "cat",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
       {
         id: 10,
-        productId: "prodb7373u",
+        productId: "prodb73nco",
         name: "American Journey",
         price: 7500,
         stock: 5,
         image: "/uploads/cat178.jfif",
+        image2: "",
         age: "adult",
         sold: 17,
         component: "Grain-free |Salmon Recipe",
-        pet: "cat"
+        pet: "cat",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
       {
         id: 11,
-        productId: "prodb7373u",
+        productId: "prodb73oid",
         name: "American Journey",
         price: 7500,
         stock: 5,
         image: "/uploads/cat180.jpg",
+        image2: "",
         age: "adult",
         sold: 17,
         component: "Grain-free | with Chicken",
-        pet: "cat"
+        pet: "cat",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
       {
         id: 12,
-        productId: "prodb7373u",
+        productId: "prodb73fk8",
         name: "Orijen",
         price: 7500,
         stock: 5,
         image: "/uploads/cat204.webp",
+        image2: "",
         age: "adult & kitten",
         sold: 17,
         component: "Whole Prey Diet",
-        pet: "cat"
+        pet: "cat",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
       {
         id: 13,
-        productId: "prodb7373u",
+        productId: "prodb73ndu",
         name: "Orijen",
         price: 7500,
         stock: 5,
         image: "/uploads/cat206.png",
+        image2: "",
         age: "adult & kitten",
         sold: 17,
         component: "Whole Prey Diet",
-        pet: "cat"
+        pet: "cat",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
       {
         id: 14,
-        productId: "prodb7373u",
+        productId: "prodb73jku",
         name: "Acana",
         price: 7500,
         stock: 5,
         image: "/uploads/cat224.png",
+        image2: "",
         age: "adult & kitten",
         sold: 17,
         component: "Small Prey Diet",
-        pet: "cat"
+        pet: "cat",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
       {
         id: 15,
-        productId: "prodb7373u",
+        productId: "prodb73jfi",
         name: "Hills",
         price: 7500,
         stock: 5,
         image: "/uploads/dog21.jpg",
+        image2: "",
         age: "Puppy",
         sold: 17,
         component: "Science Diet",
-        pet: "dog"
+        pet: "dog",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
       {
         id: 16,
-        productId: "prodb7373u",
+        productId: "prodb73iori",
         name: "Pedigree",
         price: 7500,
         stock: 5,
         image: "/uploads/dog38.png",
+        image2: "",
         age: "adult",
         sold: 17,
         component: "Real Beef & Vegies",
-        pet: "dog"
+        pet: "dog",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
       {
         id: 17,
-        productId: "prodb7373u",
+        productId: "prodb738en",
         name: "Hills",
         price: 7500,
         stock: 5,
         image: "/uploads/dog44.jpg",
+        image2: "",
         age: "adult",
         sold: 17,
         component: "Science Diet",
-        pet: "dog"
+        pet: "dog",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
       {
         id: 18,
-        productId: "prodb7373u",
+        productId: "prodb7380d",
         name: "Hills",
         price: 7500,
         stock: 5,
         image: "/uploads/dog45.jpg",
+        image2: "",
         age: "puppy",
         sold: 17,
         component: "Large Breed Real Beef & Vegies",
-        pet: "dog"
+        pet: "dog",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
       {
         id: 19,
-        productId: "prodb7373u",
+        productId: "prodb73uir7",
         name: "Orijen",
         price: 7500,
         stock: 5,
         image: "/uploads/dog50.jpg",
+        image2: "",
         age: "dog and puppy",
         sold: 17,
         component: "Whole Prey Diet",
-        pet: "dog"
+        pet: "dog",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
       {
         id: 20,
-        productId: "prodb7373u",
+        productId: "prodb73mci",
         name: "Orijen",
         price: 7500,
         stock: 5,
         image: "/uploads/dog51.jpg",
+        image2: "",
         age: "dog and puppy",
         sold: 17,
         component: "Whole Prey Diet",
-        pet: "dog"
+        pet: "dog",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
       {
         id: 21,
-        productId: "prodb7373u",
+        productId: "prodb73jkbo",
         name: "Royal Canin",
         price: 7500,
         stock: 5,
         image: "/uploads/dog55.jpg",
+        image2: "",
         age: "adult",
         sold: 17,
         component: "Health Nutrition",
-        pet: "dog"
+        pet: "dog",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
       {
         id: 22,
-        productId: "prodb7373u",
+        productId: "prodb73hnfk",
         name: "Royal Canin",
         price: 7500,
         stock: 5,
         image: "/uploads/dog56.jpg",
+        image2: "",
         age: "adult",
         sold: 17,
         component: "Breed Health Nutrition",
-        pet: "dog"
+        pet: "dog",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
       {
         id: 23,
-        productId: "prodb7373u",
+        productId: "prodb73y4m",
         name: "Merrick",
         price: 7500,
         stock: 5,
         image: "/uploads/dog62.jpg",
+        image2: "",
         age: "adult",
         sold: 17,
         component: "Real Lamb Recipe",
-        pet: "dog"
+        pet: "dog",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
       {
         id: 24,
-        productId: "prodb7373u",
+        productId: "prodb73r83",
         name: "Merrick",
         price: 7500,
         stock: 5,
         image: "/uploads/dog64.jpg",
+        image2: "",
         age: "adult",
         sold: 17,
         component: "Grain-free Real Lamb Recipe",
-        pet: "dog"
+        pet: "dog",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
       {
         id: 25,
-        productId: "prodb7373u",
+        productId: "prodb73ufb",
         name: "Pedigree",
         price: 7500,
         stock: 5,
         image: "/uploads/dog73.webp",
+        image2: "",
         age: "puppy",
         sold: 17,
         component: "Chicken & Milk",
-        pet: "dog"
+        pet: "dog",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
       {
         id: 26,
-        productId: "prodb7373u",
+        productId: "prodb73hfu",
         name: "Pedigree",
         price: 7500,
         stock: 5,
         image: "/uploads/dog74.png",
+        image2: "",
         age: "adult",
         sold: 17,
         component: "Chicken & Vegetables",
-        pet: "dog"
+        pet: "dog",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
       {
         id: 27,
-        productId: "prodb7373u",
+        productId: "prodb73irn",
         name: "Pedigree",
         price: 7500,
         stock: 5,
         image: "/uploads/dog81.png",
+        image2: "",
         age: "adult",
         sold: 17,
         component: "Real Beef & Vegies",
-        pet: "dog"
+        pet: "dog",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
       {
         id: 28,
-        productId: "prodb7373u",
+        productId: "prodb73urb",
         name: "Pedigree",
         price: 7500,
         stock: 5,
         image: "/uploads/dog82.jpg",
+        image2: "",
         age: "adult",
         sold: 17,
         component: "Real Meat",
-        pet: "dog"
+        pet: "dog",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
       {
         id: 29,
-        productId: "prodb7373u",
+        productId: "prodb73bch",
         name: "Vita",
         price: 7500,
         stock: 5,
         image: "/uploads/dog88.png",
+        image2: "",
         age: "dog and puppy",
         sold: 17,
         component: "Treats",
-        pet: "dog"
+        pet: "dog",
+        description: "These delicious treats are perfect for rewarding dogs of all ages, whether during training sessions or as an occasional snack. Made with quality ingredients, they provide a satisfying taste while also offering nutritional benefits. The treats are easy to chew and digest, making them suitable for both puppies and adult dogs. They can be used to reinforce positive behavior, making training more effective and enjoyable. In addition to being tasty, they are formulated to support general health and well-being. A great addition to your pet’s routine, these treats help strengthen the bond between you and your dog."
       },
 ]
