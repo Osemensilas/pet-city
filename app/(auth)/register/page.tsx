@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Loading from "@/components/ui/Loading";
+import { useRouter } from "next/navigation";
 
 const Page = () => {
 
@@ -11,6 +12,8 @@ const Page = () => {
         email: string;
         password: string;
     };
+    
+    const router = useRouter();
 
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(false);
@@ -79,6 +82,8 @@ const Page = () => {
 
             setError("");
             setLoading(false);
+            
+            router.push("/");
         } catch (error) {
             console.log("Error registering user: ", error);
              setError("An error occurred while registering. Please try again.");

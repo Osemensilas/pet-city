@@ -1,7 +1,7 @@
 'use client';
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter, usePathname } from "next/navigation";
 
 const Header = () => {
@@ -23,6 +23,17 @@ const Header = () => {
     const navClicked = () => {
         setShowNav(false);
     }
+    
+    useEffect(() => {
+        function getUser() {
+            const user = localStorage.getItem("users");
+            
+            if (!user){
+                setActiveUser(true);
+            }
+        }
+        getUser();
+    },[])
 
     return ( 
         <>
