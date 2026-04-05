@@ -85,7 +85,7 @@ const HomePageHero = () => {
                 <Image src={activeImg} className="" alt="hero image 1" fill />
                 </div>
             </div>
-            <div className="h-max w-max absolute top-[85%] left-[50%] translate-x-[-50%] translate-y-[-15%] z-20 flex items-center gap-5">
+            <div className="h-max w-max absolute top-[85%] left-[50%] translate-x-[-50%] translate-y-[-15%] z-5 flex items-center gap-5">
                 <div onClick={() => iconClicked(1)} className={`h-[15px] w-[15px] rounded-full border border-primary cursor-pointer
                 ${activeIndex === 1 ? "bg-primary" : ""}
                 `}></div>
