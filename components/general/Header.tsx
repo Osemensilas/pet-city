@@ -116,7 +116,17 @@ const Header = () => {
                 <div className={`h-max w-full
                 ${showNav ? "" : "hidden"}
                 `}>
-                    <button className="h-max w-full py-2 px-2 text-center bg-primary text background rounded" onClick={() => router.push("/login")}>Login</button>
+                    <button className={`h-max w-full py-2 px-2 text-center bg-primary text background rounded
+                    ${activeUser ? "hidden" : ""}
+                    `} onClick={() => router.push("/login")}>Login</button>
+                    <div className={`w-full h-max
+                    ${activeUser ? "" : "hidden"}
+                    `}>
+                        <button onClick={() => router.push("/profile")} className="h-max w-max" type="button">
+                            <i className="fa fa-user"></i>
+                            <span className="ml-3">Osemen Silas</span>
+                        </button>
+                    </div>
                 </div>
                 <Link href="/cart" onClick={navClicked} className="">
                     <i className="fa fa-shopping-cart text-xl"></i>
