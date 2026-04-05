@@ -14,7 +14,7 @@ const ShopByPet = () => {
             <h2 className={`text-2xl font-bold text-header mb-5
                 ${pathName === "/" ? "" : "hidden"}
                 `}>Shop by Pet</h2>
-            <div className="h-max py-10 w-full flex flex-col sm:flex-row items-center justify-evenly mt-10">
+            <div className="h-max py-10 w-full flex flex-col sm:flex-row items-center justify-evenly mt-10 gap-4 sm:gap-0">
                 <Link href="/store?pet=dogs" className="h-max w-max flex">
                     <div className="relative h-[200px] w-[300px] rounded">
                         <Image src="/backdog.jpg" alt="shop by dog" className="rounded" fill />

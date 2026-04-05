@@ -27,7 +27,7 @@ const Header = () => {
     useEffect(() => {
         function getUser() {
             const user = localStorage.getItem("users");
-            
+                
             if (user){
                 setActiveUser(true);
             }else{
