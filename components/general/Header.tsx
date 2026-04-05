@@ -69,9 +69,9 @@ const Header = () => {
                 </div>
             </div>
             <div className={`h-[100vh] sm:h-[50%] w-full flex-col sm:flex-row items-start sm:items-center justify-between
-            ${showNav ? "flex flex-col items-between justify-start absolute top-0 left-0 z-20 py-10 px-4 sm:px-0 sm:py-0" : "hidden sm:flex"}
+            ${showNav ? "flex flex-col items-between justify-start absolute top-0 left-0 z-20 py-10 px-4 sm:px-0 sm:py-0 bg-primary" : "hidden sm:flex"}
             `}>
-                <ul className="h-max sm:h-max w-full sm:w-max flex flex-col sm:flex-row items-start sm:items-center gap-4 bg-accent sm:bg-transparent">
+                <ul className="h-max sm:h-max w-full sm:w-max flex flex-col sm:flex-row items-start sm:items-center gap-4">
                     <li className={`text-header text-base font-medium hover:text-primary transition-colors duration-300 group
                     ${currentPath === "/" ? "text-primary" : ""}
                         `}>
@@ -116,7 +116,7 @@ const Header = () => {
                 <div className={`h-max w-full
                 ${showNav ? "" : "hidden"}
                 `}>
-                    <button className="h-max w-full py-2 px-2 text-center bg-primary text background rounded">Login</button>
+                    <button className="h-max w-full py-2 px-2 text-center bg-primary text background rounded" onClick={() => router.push("/login")}>Login</button>
                 </div>
                 <Link href="/cart" onClick={navClicked} className="">
                     <i className="fa fa-shopping-cart text-xl"></i>
