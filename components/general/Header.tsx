@@ -113,6 +113,10 @@ const Header = () => {
                             `}></div>
                     </li>
                 </ul>
+                <Link href="/cart" onClick={navClicked} className="">
+                    <i className="fa fa-shopping-cart text-xl"></i>
+                    <span className="ml-2 bg-primary text-background px-2 py-1 rounded">4 items</span>
+                </Link>
                 <div className={`h-max w-full
                 ${showNav ? "" : "hidden"}
                 `}>
@@ -128,10 +132,6 @@ const Header = () => {
                         </button>
                     </div>
                 </div>
-                <Link href="/cart" onClick={navClicked} className="">
-                    <i className="fa fa-shopping-cart text-xl"></i>
-                    <span className="ml-2 bg-primary text-background px-2 py-1 rounded">4 items</span>
-                </Link>
             </div>
         </header>
         </>
