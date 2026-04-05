@@ -11,6 +11,7 @@ const Header = () => {
 
     const [activeUser, setActiveUser] = useState(false);
     const [showNav, setShowNav] = useState(false);
+    const [currentUser, setCurrentUser] = useState([]);
     
     const hamClicked = () => {
         if (showNav){
@@ -30,6 +31,8 @@ const Header = () => {
                 
             if (user){
                 setActiveUser(true);
+                setCurrentUser(JSON.parse(user));
+                alert(JSON.parse(user));
             }else{
                 setActiveUser(false);
             }
