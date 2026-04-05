@@ -5,13 +5,18 @@ import { useState, useEffect } from "react";
 import { useRouter, usePathname } from "next/navigation";
 
 const Header = () => {
+    
+    type User = {
+        fullname: string;
+        email: string;
+        password: string;
+    }
 
     const router = useRouter();
     const currentPath = usePathname();
 
     const [activeUser, setActiveUser] = useState(false);
     const [showNav, setShowNav] = useState(false);
-    const [currentUser, setCurrentUser] = useState([]);
     
     const hamClicked = () => {
         if (showNav){
@@ -31,8 +36,11 @@ const Header = () => {
                 
             if (user){
                 setActiveUser(true);
-                setCurrentUser(JSON.parse(user));
-                alert(JSON.parse(user));
+                const currentUser: User[] = JSON.parse(localStorage.getItem("users") || "[]");
+                
+                const fullname = currentUser[0]?.fullname;
+                
+                alert(fullname);
             }else{
                 setActiveUser(false);
             }
