@@ -28,8 +28,10 @@ const Header = () => {
         function getUser() {
             const user = localStorage.getItem("users");
             
-            if (!user){
+            if (user){
                 setActiveUser(true);
+            }else{
+                setActiveUser(false);
             }
         }
         getUser();
