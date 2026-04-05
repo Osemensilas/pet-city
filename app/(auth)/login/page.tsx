@@ -38,7 +38,7 @@ const Page = () => {
             <div className="w-full sm:w-1/2 h-full flex justify-center items-center">
                 <form className="w-full sm:w-[450px] bg-accent rounded px-10" onSubmit={(e) => e.preventDefault()}>
                     <h2 className="text-text text-3xl font-bold text-center py-5">Client Login</h2>
-                    <div className={`h-max w-full bg-danger px-2 py-2 ${error ? "" : "hidden"}
+                    <div className={`h-max w-full bg-danger px-2 py-2 ${error ? "" : "hidden text-background rounded text-center"}
                     `}>{error}</div>
                     <div className="h-max w-full border-t border-grey pt-5">
                         <div className="h-max w-full flex flex-col">
