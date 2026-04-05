@@ -22,7 +22,7 @@ const ProductCard: React.FC<Props> = ( {product} ) => {
         <div className="relative sm:h-[150px] sm:w-[180px] h-[125px] w-[150px]">
           <Image src={product.image} alt={product.name} className="object-fit" fill />
         </div>
-        <div className="w-[180px] h-[100px] mt-2 pb-2">
+        <div className="sm:w-[180px] sm:h-[100px] w-[125px] h-[150px] mt-2 pb-2">
           <div className="h-max w-full flex items-center justify-between mb-2">
             <h3 className="text-sm font-semibold">{product.name}</h3>
             <p className={`text-sm text-text
