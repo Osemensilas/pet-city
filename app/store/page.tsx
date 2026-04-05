@@ -134,7 +134,7 @@ const Page = () => {
               <i className="fa-solid fa-filter"></i>
             </button>
           </div>
-          <div className="h-max w-full bg-accent rounded p-4 sm:p-3">
+          <div className="h-max w-full bg-accent rounded p-2 sm:p-4">
             <div className="h-max w-full flex items-center flex-wrap gap-3 mb-5">
               {
                 allProducts.length < 1 ? (
