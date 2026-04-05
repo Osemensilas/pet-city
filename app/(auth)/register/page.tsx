@@ -52,6 +52,10 @@ const Page = () => {
             setLoading(false);
             return;
         }
+        
+        const now = new Date();
+        
+        const currentTime = now.getTime();
 
         try {
             const newUser: User = {

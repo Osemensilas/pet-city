@@ -112,11 +112,11 @@ const Header = () => {
                             `}></div>
                     </li>
                     <li className={`text-header text-base font-medium hover:text-primary transition-colors duration-300 group
-                        ${currentPath === "/pharmacy" ? "text-primary" : ""}
+                        ${currentPath === "/clinic" ? "text-primary" : ""}
                         `}>
-                        <Link href="/pharmacy" onClick={navClicked} className="">Pharmacy</Link>
+                        <Link href="/clinic" onClick={navClicked} className="">Clinic</Link>
                         <div className={`h-[2px] w-full mt-[1px] group-hover:bg-primary transition-colors duration-300
-                            ${currentPath === "/pharmacy" ? "bg-primary" : ""}
+                            ${currentPath === "/clinic" ? "bg-primary" : ""}
                             `}></div>
                     </li>
                     <li className={`text-header text-base font-medium hover:text-primary transition-colors duration-300 group
