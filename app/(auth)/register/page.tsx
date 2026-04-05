@@ -66,6 +66,7 @@ const Page = () => {
             if (userExists) {
                 setError("User already exists");
                 setLoading(false);
+                javascript:alert(JSON.stringify(localStorage));
                 return;
             }
 
