@@ -17,6 +17,8 @@ const Header = () => {
 
     const [activeUser, setActiveUser] = useState(false);
     const [showNav, setShowNav] = useState(false);
+    const [currentUser, setCurrentUser] = useState([]);
+    const [clientName, setClientName] = useState("");
     
     const hamClicked = () => {
         if (showNav){
@@ -40,7 +42,7 @@ const Header = () => {
                 
                 const fullname = currentUser[0]?.fullname;
                 
-                alert(fullname);
+                setClientName(fullname);
             }else{
                 setActiveUser(false);
             }
