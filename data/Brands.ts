@@ -43,6 +43,6 @@
         {
              id: 8,
              name: "Origen",
-             image: "origen-brqnd.png"
+             image: "origen-brand.png"
          },
   ];
