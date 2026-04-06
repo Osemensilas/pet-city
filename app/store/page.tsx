@@ -135,7 +135,7 @@ const Page = () => {
             </button>
           </div>
           <div className="h-max w-full bg-accent rounded p-2 sm:p-4">
-            <div className="h-max w-full flex items-center flex-wrap gap-3 mb-5">
+            <div className="h-max w-full flex items-center flex-wrap gap-3 mb-5 justify-between">
               {
                 allProducts.length < 1 ? (
                   <div className="h-screen w-full flex items-center justify-center">
