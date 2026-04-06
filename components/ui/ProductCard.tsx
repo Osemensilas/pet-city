@@ -18,7 +18,7 @@ const ProductCard: React.FC<Props> = ( {product} ) => {
     
   return (
     <>
-      <div className="h-max w-max bg-accent rounded p-3">
+      <div className="h-max w-max bg-accent rounded p-1 sm:p-3">
         <div className="relative sm:h-[150px] sm:w-[180px] h-[150px] w-[125px]">
           <Image src={product.image} alt={product.name} className="object-fit" fill />
         </div>
@@ -31,8 +31,8 @@ const ProductCard: React.FC<Props> = ( {product} ) => {
           </div>
           <h3 className="text-xs text-text">{product.component}</h3>
           <div className="w-full h-max pt-2 flex items-center justify-between">
-            <span className="text-text text-base font-bold">₦{(product.price).toLocaleString()}</span>
-              <button onClick={() => viewProduct(product.productId)} type="button" className="border-primary border text-primary px-3 py-1 rounded hover:bg-primary hover:text-background transition-colors duration-300 ml-5 text-sm"><i className="fa fa-arrow-right"></i> <span> Add</span></button>
+            <span className="text-text text-sm sm:text-base font-bold">₦{(product.price).toLocaleString()}</span>
+              <button onClick={() => viewProduct(product.productId)} type="button" className="border-primary border text-primary px-1 sm:px-3 py-1 rounded hover:bg-primary hover:text-background transition-colors duration-300 ml-5 text-sm"><i className="fa fa-arrow-right"></i> <span> Add</span></button>
             </div>
           </div>
         </div> 
