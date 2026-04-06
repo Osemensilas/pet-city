@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useSearchParams } from 'next/navigation';
 import { Product, products } from "@/data/Products";
-import SimilarProducts from "@/components/general/SimilarProducts";
+import SimilarProducts from "@/components/sections/SimilarProducts";
 
 const Page = () => {
 

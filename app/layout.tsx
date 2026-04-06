@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/general/Header";
-import Footer from "@/components/general/Footer";
+import Header from "@/components/sections/Header";
+import Footer from "@/components/sections/Footer";
 import '../lib/fontawesome';
 import Head from "next/head";
 

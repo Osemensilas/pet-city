@@ -1,8 +1,8 @@
 'use client';
 
-import PageHero from "@/components/general/PageHero";
-import FAQs from "@/components/general/Faqs";
-import ShopByPet from "@/components/general/ShopByPet";
+import PageHero from "@/components/sections/PageHero";
+import FAQs from "@/components/sections/Faqs";
+import ShopByPet from "@/components/sections/ShopByPet";
 
 const Page = () => {
     return ( 
