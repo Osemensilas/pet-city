@@ -19,7 +19,7 @@ const ProductCard: React.FC<Props> = ( {product} ) => {
   return (
     <>
       <div className="h-max w-max bg-accent rounded p-3">
-        <div className="relative sm:h-[150px] sm:w-[180px] h-[125px] w-[150px]">
+        <div className="relative sm:h-[150px] sm:w-[180px] h-[150px] w-[125px]">
           <Image src={product.image} alt={product.name} className="object-fit" fill />
         </div>
         <div className="sm:w-[180px] sm:h-[100px] w-[125px] h-[150px] mt-2 pb-2">
