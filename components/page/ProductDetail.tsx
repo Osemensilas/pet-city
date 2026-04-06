@@ -75,7 +75,7 @@ const ProductDetail = () => {
   
   return (
     <>
-        <section className="h-max w-screen px-4 sm:px-10 py-10">
+        <section className="h-max w-screen px-4 sm:px-10 sm:py-10 py-0">
           <form onSubmit={(e) => e.preventDefault()} className="h-max w-full flex flex-col sm:flex-row items-start gap-3">
             <div className="h-max sm:w-[65%] w-full bg-accent rounded p-4 sm:p-10">
               <div className="h-max w-full flex justify-center items-center">
