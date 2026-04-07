@@ -16,7 +16,8 @@ module.exports = {
         grey: "var(--grey)",
         danger: "var(--danger)",
         lighterGrey: "var(--lighterGrey)",
-        header: "var(--header)"
+        header: "var(--header)",
+        orange: "var(--orange)"
       }
     },
   },

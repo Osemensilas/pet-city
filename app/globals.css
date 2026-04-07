@@ -15,6 +15,7 @@
   --lighterGrey: #eeeded;
   --danger: #fa0606;
   --header: #004646;
+  --orange: #eea811;
 }
 
 html,
@@ -196,4 +197,11 @@ body {
 
 .frequent-drop-down-container.active{
   transform: rotate(-180deg);
+}
+
+.centerText {
+  font-size: 20px;
+  font-weight: bold;
+  fill: #333;
+  pointer-events: none;
 }
