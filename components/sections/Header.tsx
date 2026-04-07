@@ -30,6 +30,8 @@ const Header = () => {
             ${currentPath === "/login" ? "hidden" : ""}
             ${currentPath === "/register" ? "hidden" : ""}
             ${currentPath === "/forget-password" ? "hidden" : ""}
+            ${currentPath === "/admin" ? "hidden" : ""}
+            ${currentPath === "/admin/dashboard" ? "hidden" : ""}
             `}>
             <div className="h-full sm:h-[50%] w-full flex items-center justify-between">
                 <div className="h-max w-max cursor-pointer" onClick={() => router.push("/")}>

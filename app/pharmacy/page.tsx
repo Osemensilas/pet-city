@@ -1,6 +1,6 @@
 'use client';
 
-import FAQs from '@/components/general/Faqs';
+import FAQs from '@/components/sections/Faqs';
 import Image from 'next/image';
 
 const Page = () => {

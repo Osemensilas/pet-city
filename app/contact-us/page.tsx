@@ -1,5 +1,5 @@
 'use client';
-import PageHero from "@/components/general/PageHero";
+import PageHero from "@/components/sections/PageHero";
 
 const Page = () => {
   return(
@@ -22,16 +22,16 @@ const Page = () => {
           <p className="text-base text-text">osemensilas@gmail.com</p>
         </div>
         <div className="h-max w-full flex items-center gap-3 mt-5">
-          <a href="#" target="_blank" className="">
+          <a href="#" target="_blank" title="social media" className="">
             <i className="fa-brands fa-facebook"></i>
           </a>
-          <a href="#" target="_blank" className="">
+          <a href="#" target="_blank" title="social media" className="">
             <i className="fa-brands fa-instagram"></i>
           </a>
-          <a href="#" target="_blank" className="">
+          <a href="#" target="_blank" title="social media" className="">
             <i className="fa-brands fa-whatsapp"></i>
           </a>
-          <a href="#" target="_blank" className="">
+          <a href="#" target="_blank" title="social media" className="">
             <i className="fa-brands fa-twitter"></i>
           </a>
         </div>

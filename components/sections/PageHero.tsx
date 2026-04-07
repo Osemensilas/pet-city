@@ -21,7 +21,7 @@ const PageHero = () => {
       setHeroText("Shop by Pet");
     }else if (pathName === "/shop-by-brand"){
       setHeroText("Shop by Brand");
-    }else if(pathName ==="about-us") {
+    }else if (pathName === "/about-us"){
       setHeroText("About Us");
     }else{
       setHeroText("");

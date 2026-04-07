@@ -14,6 +14,8 @@ const Footer = () => {
             ${currentPath === "/login" ? "hidden" : ""}
             ${currentPath === "/register" ? "hidden" : ""}
             ${currentPath === "/forget-password" ? "hidden" : ""}
+            ${currentPath === "/admin" ? "hidden" : ""}
+            ${currentPath === "/admin/dashboard" ? "hidden" : ""}
             `}>
             <div className="h-max w-full flex sm:flex-row flex-col items-start justify-between border-b bordergrey pb-3 mb-3">
                 <div className="h-max w-full sm:w-max flex flex-col items-center gap-3">
