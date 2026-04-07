@@ -28,21 +28,21 @@
         {
              id: 5,
              name: "Sheba",
-             image: "brand1.jpg"
+             image: "sheba-brand.png"
          },
         {
              id: 6,
              name: "Drool",
-             image: "brand1.jpg"
+             image: "drool-brand.png"
          },
         {
              id: 7,
              name: "Acana",
-             image: "brand1.jpg"
+             image: "acana-brand.png"
          },
         {
              id: 8,
-             name: "Origin",
-             image: "brand1.jpg"
+             name: "Origen",
+             image: "origen-brand.png"
          },
   ];

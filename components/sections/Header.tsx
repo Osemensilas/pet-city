@@ -1,16 +1,24 @@
 'use client';
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter, usePathname } from "next/navigation";
 
 const Header = () => {
+    
+    type User = {
+        fullname: string;
+        email: string;
+        password: string;
+    }
 
     const router = useRouter();
     const currentPath = usePathname();
 
     const [activeUser, setActiveUser] = useState(false);
     const [showNav, setShowNav] = useState(false);
+    const [currentUser, setCurrentUser] = useState([]);
+    const [clientName, setClientName] = useState("");
     
     const hamClicked = () => {
         if (showNav){
@@ -23,6 +31,24 @@ const Header = () => {
     const navClicked = () => {
         setShowNav(false);
     }
+    
+    useEffect(() => {
+        function getUser() {
+            const user = localStorage.getItem("users");
+                
+            if (user){
+                setActiveUser(true);
+                const currentUser: User[] = JSON.parse(localStorage.getItem("users") || "[]");
+                
+                const fullname = currentUser[0]?.fullname;
+                
+                setClientName(fullname);
+            }else{
+                setActiveUser(false);
+            }
+        }
+        getUser();
+    },[])
 
     return ( 
         <>
@@ -43,8 +69,8 @@ const Header = () => {
                         <i className="fa fa-search text-grey"></i>
                     </button>
                 </form>
-                <div className="h-max w-max hidden sm:block">
-                    <div className={`${activeUser ? "hidden" : "text-base text-primary py-1 px-4 border border-primary rounded cursor-pointer"}`}>
+                <div className="h-max w-max sm:block hidden">
+                    <div className={`${activeUser ? "hidden" : "block text-base text-primary py-1 px-4 border border-primary rounded cursor-pointer"}`}>
                         <Link href="/login">Login</Link>
                     </div>
                     <Link href="/profile" className={`${activeUser ? "" : "hidden"}`}>
@@ -60,9 +86,9 @@ const Header = () => {
                 </div>
             </div>
             <div className={`h-[100vh] sm:h-[50%] w-full flex-col sm:flex-row items-start sm:items-center justify-between
-            ${showNav ? "flex absolute top-0 left-0 z-20" : "hidden sm:flex"}
+            ${showNav ? "flex flex-col items-between justify-start fixed top-0 left-0 z-20 py-10 px-4 sm:px-0 sm:py-0 bg-background" : "hidden sm:flex"}
             `}>
-                <ul className="h-full sm:h-max w-full sm:w-max flex flex-col sm:flex-row items-start sm:items-center gap-4 bg-accent sm:bg-transparent px-5 py-10 sm:px-0 sm:py-0">
+                <ul className="h-max sm:h-max w-full sm:w-max flex flex-col sm:flex-row items-start sm:items-center gap-4">
                     <li className={`text-header text-base font-medium hover:text-primary transition-colors duration-300 group
                     ${currentPath === "/" ? "text-primary" : ""}
                         `}>
@@ -88,11 +114,11 @@ const Header = () => {
                             `}></div>
                     </li>
                     <li className={`text-header text-base font-medium hover:text-primary transition-colors duration-300 group
-                        ${currentPath === "/pharmacy" ? "text-primary" : ""}
+                        ${currentPath === "/clinic" ? "text-primary" : ""}
                         `}>
-                        <Link href="/pharmacy" onClick={navClicked} className="">Pharmacy</Link>
+                        <Link href="/clinic" onClick={navClicked} className="">Clinic</Link>
                         <div className={`h-[2px] w-full mt-[1px] group-hover:bg-primary transition-colors duration-300
-                            ${currentPath === "/pharmacy" ? "bg-primary" : ""}
+                            ${currentPath === "/clinic" ? "bg-primary" : ""}
                             `}></div>
                     </li>
                     <li className={`text-header text-base font-medium hover:text-primary transition-colors duration-300 group
@@ -108,6 +134,21 @@ const Header = () => {
                     <i className="fa fa-shopping-cart text-xl"></i>
                     <span className="ml-2 bg-primary text-background px-2 py-1 rounded">4 items</span>
                 </Link>
+                <div className={`h-max w-full
+                ${showNav ? "" : "hidden"}
+                `}>
+                    <button className={`h-max w-full py-2 px-2 text-center bg-primary text background rounded
+                    ${activeUser ? "hidden" : ""}
+                    `} onClick={() => router.push("/login")}>Login</button>
+                    <div className={`w-full h-max
+                    ${activeUser ? "" : "hidden"}
+                    `}>
+                        <button onClick={() => router.push("/profile")} className="h-max w-max" type="button">
+                            <i className="fa fa-user"></i>
+                            <span className="ml-3">Osemen Silas</span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </header>
         </>

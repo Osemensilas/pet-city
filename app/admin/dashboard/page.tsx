@@ -1,5 +1,6 @@
 'use client';
 
+import Home from "@/components/admin/pages/Home";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -20,10 +21,25 @@ const Dashboard = () => {
                         `}>
                     <i className="fa fa-home"></i>
                     Home</Link>
+                    <Link href={""} className={`w-full py-3 text-base px-4 border-b border-grey flex items-center gap-3
+                        ${pathName === "/admin/orders" ? "text-primary" : "text-grey"}
+                        `}>
+                    <i className="fa fa-home"></i>
+                    Orders</Link>
+                    <Link href={""} className={`w-full py-3 text-base px-4 border-b border-grey flex items-center gap-3
+                        ${pathName === "/admin/buyers" ? "text-primary" : "text-grey"}
+                        `}>
+                    <i className="fa fa-home"></i>
+                    Buyers</Link>
+                    <Link href={""} className={`w-full py-3 text-base px-4 border-b border-grey flex items-center gap-3
+                        ${pathName === "/admin/shipments" ? "text-primary" : "text-grey"}
+                        `}>
+                    <i className="fa fa-home"></i>
+                    Shipments</Link>
                 </div>
             </div>
             <div className="h-max max-h-screen w-[80%]">
-
+                <Home />
             </div>
         </section>
         </>
