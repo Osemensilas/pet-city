@@ -12,9 +12,9 @@ const Header = () => {
                     <input
                     type="text"
                     placeholder="Property type, location, price range"
-                    className="h-10 w-[400px] border border-gray-200 rounded px-10 text-sm outline-none"
+                    className="h-10 w-[400px] border border-grey rounded px-10 text-sm outline-none"
                     />
-                    <button className="h-10 px-5 bg-red-600 text-white rounded text-sm">
+                    <button className="h-10 px-5 bg-primary text-accent rounded text-sm">
                     Search
                     </button>
                 </form>
@@ -30,9 +30,6 @@ const Header = () => {
                 </div>
             </div>
         </header>
-        <div className="px-12 pb-10">
-          <h2 className="text-3xl font-semibold">Dashboard</h2>
-        </div>
         </>
      );
 }
