@@ -14,7 +14,7 @@ const Products = () => {
 
     return (
         <>
-        <div className="h-max w-full flex flex-col gap-6 px-12 pb-10">
+        <div className="h-max w-full flex flex-col gap-6 px-4 sm:px-12 pb-10">
             {/* HEADER */}
             <div className="flex justify-between items-center">
                 <h2 className="text-3xl font-semibold">Products</h2>
@@ -29,7 +29,7 @@ const Products = () => {
                 {/* FILTER FORM */}
                 <form className="flex justify-between items-center py-5">
 
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-3 text-xm sm:text-base">
                         <select title="category" className="border border-grey px-4 py-2 rounded-lg text-sm">
                             <option>Category</option>
                         </select>

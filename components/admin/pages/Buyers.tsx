@@ -4,7 +4,10 @@ const Buyers = () => {
     return ( 
         <>
         <div className="w-full h-max">
-            <div className="px-[80px] py-5">
+            <div className="px-12 pb-10 w-full">
+                <h2 className="text-3xl font-semibold">Buyers</h2>
+            </div>
+            <div className="px-12 pb-5">
                 <form className="flex justify-between items-center py-5">
                     <div className="flex items-center gap-3">
                         <select title="id" className="border border-[var(--grey)] px-4 py-2 rounded-lg text-[15px] outline-none">

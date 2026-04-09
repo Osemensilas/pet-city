@@ -7,7 +7,7 @@ const Shipment = () => {
     const actionClicked = (e: any) => {
         const trackingId = e.currentTarget.parentElement.parentElement.children[2].innerText;
         console.log(trackingId);
-        window.history.pushState({}, '', '/admin/track-shipment?trackingId=' + trackingId);
+        window.history.pushState({}, '', '/admin/dashboard/track-shipment?trackingId=' + trackingId);
     }
 
     const shipment = () => {
@@ -27,7 +27,7 @@ const Shipment = () => {
         <div className="w-full">
             {/* HEADER */}
             <header className="flex justify-between items-center px-[80px] py-5">
-                <h2 className="text-[35px] font-semibold">Shipments</h2>
+                <h2 className="text-3xl font-semibold">Shipments</h2>
                 <button 
                     onClick={shipment}
                     className="bg-[var(--primary)] text-[var(--background)] px-6 py-3 rounded-lg text-[17px] flex items-center gap-2"
@@ -52,16 +52,16 @@ const Shipment = () => {
                 {/* FILTER */}
                 <form className="flex justify-between items-center py-5">
                     <div className="flex items-center gap-3">
-                        <select className="border border-[var(--grey)] px-4 py-2 rounded-lg text-[15px] outline-none">
+                        <select title="customer" className="border border-[var(--grey)] px-4 py-2 rounded-lg text-[15px] outline-none">
                             <option>Customer</option>
                         </select>
-                        <select className="border border-[var(--grey)] px-4 py-2 rounded-lg text-[15px] outline-none">
+                        <select title="status" className="border border-[var(--grey)] px-4 py-2 rounded-lg text-[15px] outline-none">
                             <option>Status</option>
                         </select>
-                        <select className="border border-[var(--grey)] px-4 py-2 rounded-lg text-[15px] outline-none">
+                        <select title="today" className="border border-[var(--grey)] px-4 py-2 rounded-lg text-[15px] outline-none">
                             <option>Today</option>
                         </select>
-                        <select className="border border-[var(--grey)] px-4 py-2 rounded-lg text-[15px] outline-none">
+                        <select title="modified" className="border border-[var(--grey)] px-4 py-2 rounded-lg text-[15px] outline-none">
                             <option>Modified</option>
                         </select>
                     </div>
@@ -111,11 +111,41 @@ const Shipment = () => {
                         ))}
                     </tbody>
                 </table>
+                <div className="flex justify-between items-center py-3">
+
+                    <div className="text-sm">
+                        showing 1 - 10 of 25
+                    </div>
+
+                    <ul className="flex items-center gap-3">
+
+                        <li>
+                            <button type="button" title="button" className="w-5 h-5 border border-grey rounded flex items-center justify-center text-gray-400">
+                                <i className="fa fa-angle-left"></i>
+                            </button>
+                        </li>
+
+                        <li>
+                            <button className="w-5 h-5 bg-primary text-accent rounded-full flex items-center justify-center">
+                                1
+                            </button>
+                        </li>
+                        <li><button>2</button></li>
+                        <li><button>3</button></li>
+                        <li>...</li>
+                        <li><button>10</button></li>
+                        <li>
+                            <button type="button" title="button" className="w-5 h-5 border border-primary text-primary rounded flex items-center justify-center">
+                                <i className="fa fa-angle-right"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             {/* MODAL */}
-            <div className="addShipmentForm fixed top-0 left-0 w-screen h-screen hidden justify-center items-center bg-[var(--background)]">
-                <form className="w-[500px] bg-[var(--background)] shadow-lg rounded-lg p-5">
+            <div className="addShipmentForm px-20 fixed top-0 left-0 w-screen h-screen hidden justify-center items-start bg-background overflow-y-scroll">
+                <form className="w-[500px] h-max bg-accent shadow-lg rounded-lg p-5">
 
                     {/* HEADER */}
                     <header className="flex justify-between items-center border-b border-[var(--lightGrey)] pb-3 mb-4">
@@ -136,13 +166,13 @@ const Shipment = () => {
                         ].map((label, i) => (
                             <div key={i} className="flex flex-col gap-1">
                                 <label className="text-sm">{label}:</label>
-                                <input className="border border-[var(--grey)] rounded px-3 py-2 outline-none" />
+                                <input title={label} className="border border-[var(--grey)] rounded px-3 py-2 outline-none" />
                             </div>
                         ))}
 
                         <div className="flex flex-col gap-1">
                             <label className="text-sm">Product Description:</label>
-                            <textarea className="border border-[var(--grey)] rounded px-3 py-2 outline-none"></textarea>
+                            <textarea title="description" className="border border-[var(--grey)] rounded px-3 py-2 outline-none"></textarea>
                         </div>
                     </div>
 

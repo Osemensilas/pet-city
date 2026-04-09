@@ -8,10 +8,10 @@ import DashboardLocationPie from '../components/graphs/DashboardLocationPie';
 const Home = () => {
   return (
     <>
-    <div className="px-12 pb-10">
+    <div className="px-4 sm:px-12 pb-10">
           <h2 className="text-3xl font-semibold">Dashboard</h2>
     </div>
-    <div className="flex flex-col gap-6 px-12 pb-10">
+    <div className="flex flex-col gap-6 px-4 sm:px-12 pb-10">
         {/* SUMMARY CARDS */}
         <div className="bg-accent rounded flex items-center px-3 h-max py-5">
             <div className="flex w-full">
@@ -39,9 +39,9 @@ const Home = () => {
             </div>
         </div>
         {/* SALES + PRODUCTS */}
-        <div className="flex gap-5">
+        <div className="flex sm:flex-row flex-col gap-5">
             {/* LEFT */}
-            <div className="w-[65%] bg-accent rounded">
+            <div className="w-full sm:w-[65%] bg-accent rounded">
                 <div className="bg-grey px-5 h-12 flex items-center justify-between rounded">
                     <h3 className="text-lg">Sales Overview</h3>
                     <p>+50.53%</p>
@@ -76,7 +76,7 @@ const Home = () => {
                 </div>
             </div>
             {/* RIGHT */}
-            <div className="w-[35%] bg-accent rounded">
+            <div className="w-full sm:w-[35%] bg-accent rounded">
             <div className="bg-grey px-5 h-12 flex items-center rounded">
                 <h3 className="text-lg">Quick Stats</h3>
             </div>
@@ -93,16 +93,10 @@ const Home = () => {
             </div>
             </div>
         </div>
-        {/*Line Graphs*/}
-        <div className={`h-max w-full flex flex-col gap-10 pr-20 bg-accent rounded`}>
-            <div className="h-max w-full">
-                <DashboardLineGraph />
-            </div>
-        </div>
         {/* PRODUCTS */}
-        <div className="flex gap-5">
+        <div className="flex sm:flex-row flex-col gap-5">
             {/* LEFT */}
-            <div className="w-[60%] bg-accent rounded">
+            <div className="w-full sm:w-[60%] bg-accent rounded">
                 <div className="bg-grey px-5 h-12 flex items-center rounded">
                     <h3 className="text-lg">Top Products</h3>
                 </div>
@@ -118,7 +112,7 @@ const Home = () => {
                 </div>
             </div>
             {/* RIGHT */}
-            <div className="w-[40%] bg-accent rounded">
+            <div className="w-full sm:w-[40%] bg-accent rounded">
                 <div className="bg-grey px-5 h-12 flex items-center rounded">
                     <h3 className="text-lg">Inventory</h3>
                 </div>
@@ -135,8 +129,8 @@ const Home = () => {
             </div>
         </div>
         {/*Table and Location*/}
-        <div className="h-max w-full flex gap-3 box-shadow rounded">
-            <div className="w-[55%] h-max">
+        <div className="h-max w-full flex sm:flex-row flex-col gap-3 box-shadow rounded">
+            <div className="w-full sm:w-[55%] h-max">
                 <div className="bg-accent rounded py-5">
                     <h3 className="mb-4 text-lg ml-5 font-bold">Sales Orders</h3>
                     <table className="w-full text-center border-collapse">
@@ -168,7 +162,7 @@ const Home = () => {
                     </table>
                 </div>
             </div>
-            <div className="w-[45%] h-max box-shadow bg-accent rounded rounded-t">
+            <div className="w-full sm:w-[45%] h-max box-shadow bg-accent rounded rounded-t">
                 <header className="h-[50px] w-full rounded-t flex items-center justify-center bg-grey">
                     <h3 className='text-base font-bold'>Major Sales by Location</h3>
                 </header>

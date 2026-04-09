@@ -64,6 +64,9 @@ const Header = () => {
             ${currentPath === "/admin/dashboard/products/view-product" ? "hidden" : ""}
             ${currentPath === "/admin/dashboard/buyers" ? "hidden" : ""}
             ${currentPath === "/admin/dashboard/shipments" ? "hidden" : ""}
+            ${currentPath === "/admin/dashboard/track-shipment" ? "hidden" : ""}
+            ${currentPath === "/admin/dashboard/customer-care" ? "hidden" : ""}
+            ${currentPath === "/admin/dashboard/reports" ? "hidden" : ""}
             `}>
             <div className="h-full sm:h-[50%] w-full flex items-center justify-between">
                 <div className="h-max w-max cursor-pointer" onClick={() => router.push("/")}>

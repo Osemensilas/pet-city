@@ -11,6 +11,9 @@ import Orders from "@/components/admin/pages/Orders";
 import ViewOrders from "@/components/admin/pages/ViewOrders";
 import Buyers from "@/components/admin/pages/Buyers";
 import Shipment from "@/components/admin/pages/Shipment";
+import TrackShipment from "@/components/admin/pages/TrackShipment";
+import CustomerCare from "@/components/admin/pages/CustomerCare";
+import Reports from "@/components/admin/pages/Report";
 
 const Page = () => {
 
@@ -21,7 +24,7 @@ const Page = () => {
         <Suspense>
         <section className="h-max w-screen flex items-start">
             <Navigations />
-            <div className="h-max w-[80%]">
+            <div className="h-max sm:w-[80%] w-full">
                 <div className="w-full h-screen overflow-x-hidden overflow-y-auto">
                     <Header />
                     <div className="h-max max-h-screen w-full">
@@ -59,6 +62,16 @@ const Page = () => {
                             ${pathName === "/admin/dashboard/shipments" ? "" : "hidden"}
                             `}>
                             <Shipment />
+                        </div>
+                        <div className={`h-max w-full
+                            ${pathName === "/admin/dashboard/track-shipment" ? "" : "hidden"}
+                            `}>
+                            <TrackShipment />
+                        </div>
+                        <div className={`h-max w-full
+                            ${pathName === "/admin/dashboard/reports" ? "" : "hidden"}
+                            `}>
+                            <Reports />
                         </div>
                     </div>
                 </div>

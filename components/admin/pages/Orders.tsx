@@ -15,7 +15,7 @@ const Orders = () => {
         <div className="w-full h-max">
             {/* HEADER */}
             <div className="px-12 pb-10 w-full">
-                <h2 className="text-[35px] font-semibold">Orders</h2>
+                <h2 className="text-3xl font-semibold">Orders</h2>
             </div>
 
             {/* EARNINGS CARD */}

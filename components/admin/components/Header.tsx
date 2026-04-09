@@ -4,7 +4,7 @@ const Header = () => {
     return ( 
         <>
         <header className="h-max w-full">
-            <div className="flex justify-between items-center px-12 py-10 border-b border-gray-200 mb-5">
+            <div className="flex justify-between items-center px-4 sm:px-12 py-10 border-b border-gray-200 mb-5">
           
                 {/* SEARCH */}
                 <form className="flex items-center gap-3 relative">

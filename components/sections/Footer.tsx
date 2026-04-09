@@ -22,6 +22,9 @@ const Footer = () => {
             ${currentPath === "/admin/dashboard/orders/view-orders" ? "hidden" : ""}
             ${currentPath === "/admin/dashboard/buyers" ? "hidden" : ""}
             ${currentPath === "/admin/dashboard/shipments" ? "hidden" : ""}
+            ${currentPath === "/admin/dashboard/track-shipment" ? "hidden" : ""}
+            ${currentPath === "/admin/dashboard/customer-care" ? "hidden" : ""}
+            ${currentPath === "/admin/dashboard/reports" ? "hidden" : ""}
             `}>
             <div className="h-max w-full flex sm:flex-row flex-col items-start justify-between border-b bordergrey pb-3 mb-3">
                 <div className="h-max w-full sm:w-max flex flex-col items-center gap-3">
